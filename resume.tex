@@ -1,5 +1,17 @@
 % !TEX TS-program = lualatex
+
 \documentclass[alternative,10pt,compact]{yaac-another-awesome-cv}
+\newcommand\experiencewithblurb[8]{
+  \textbf{#1}    & \textbf{#2, \textsc{#3}, #4}   								\\*
+  \textbf{#5}    & \textit{#6} \\*
+                 & \begin{minipage}[t]{\rightcolumnlength}
+  					         #7
+                   \end{minipage}										\\*
+                 & \footnotesize{\foreach \n in {#8}{\cvtag{\n}}} 	\\
+  }
+
+\newcommand\sectionHeader[1]{\section{\texorpdfstring{\color{accentcolor}\textsc{#1}}{#1}}}
+
 \name{Jonathan}{Jin}
 \tagline{Machine Learning Infrastructure Engineer}
 \socialinfo{
@@ -13,6 +25,9 @@
 
 \begin{document}
 
+%% cls sets French as the default babel language; we undo that here.
+\selectlanguage{english}
+
 \makecvheader
 
 \makecvfooter
@@ -20,17 +35,18 @@
     {\textsc{Jonathan Jin}}
     {}
 
-\sectionTitle{Experience}{\faSuitcase}
+\sectionHeader{Experience}
 
 \begin{experiences}
 
-  \experience
+  \experiencewithblurb
       {Present}
       {Spotify}
       {Senior Machine Learning Software Engineer}
       {New York}
-      {03/2021}{
-
+      {03/2021}
+      {Member of ML Platform.}
+      {
         \begin{itemize}
         \item Working on: centralized, multi-tenant ML orchestration
           infrastructure with Kubernetes and \href{http://kubeflow.org/}{Kubeflow}; and user-facing
@@ -51,12 +67,13 @@
 
   \emptySeparator
 
-  \experience
+  \experiencewithblurb
       {01/2021}
       {NVIDIA}
       {Senior Systems Software Engineer, AI Infrastructure}
       {New York}
       {12/2019}
+      {Member of AI Infrastructure. Contributor to \href{https://blogs.nvidia.com/blog/2018/09/13/how-maglev-speeds-autonomous-vehicles-to-superhuman-levels-of-safety/}{MagLev}, NVIDIA’s AI infrastructure for autonomous vehicle development. Also contributed to Modulus, the deep learning SDK for autonomous vehicle R\&D.}
       {
         \begin{itemize}
         \item Developing solution for “hybrid data/model parallelism” using a
@@ -74,12 +91,13 @@
 
   \emptySeparator
 
-  \experience
+  \experiencewithblurb
       {12/2019}
       {Twitter}
       {Machine Learning Software Engineer}
       {New York}
       {08/2018}
+      {Member of \href{http://cortex.twitter.com}{Cortex}, Twitter’s central ML platform organization. Worked on: workflow orchestration; experiment management/iteration; and overall ML engineering productivity.}
       {
         \begin{itemize}
         \item Core contributor to
@@ -102,12 +120,13 @@
 
   \emptySeparator
 
-  \experience
+  \experiencewithblurb
       {07/2018}
       {Uber}
       {Software Engineer}
       {New York}
       {07/2016}
+      {Member of \href{https://eng.uber.com/observability-at-scale/}{Observability Applications}. Worked on forecasting and anomaly detection for time series metrics.}
       {
         \begin{itemize}
         \item
@@ -138,12 +157,11 @@
         \item Implemented prototype collaborative filtering functionality for
           matching between prospectively compatible users.
         \end{itemize}
-
       }
       {C++}
 \end{experiences}
 
-\sectionTitle{Skills}{\faTasks}
+\sectionHeader{Skills}
 
 \begin{keywords}
   \keywordsentry{Programming Languages}
@@ -181,7 +199,7 @@
   }
 \end{keywords}
 
-\sectionTitle{Education}{\faGraduationCap}
+\sectionHeader{Education}
 
 \begin{scholarship}
   \scholarshipentry{2015}
