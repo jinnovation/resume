@@ -1,0 +1,2 @@
+resume:
+	lualatex resume.tex
