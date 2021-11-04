@@ -1,13 +1,29 @@
 % !TEX TS-program = lualatex
 
-\documentclass[alternative,10pt,compact]{yaac-another-awesome-cv}
+\documentclass[alternative,10pt,compact,monochrome]{yaac-another-awesome-cv}
+
+\renewcommand\user[2]{\color{accentcolor}{\LARGE\textbf{#1 #2}}\color{Black}}
+
+\renewcommand\resumetitle[1]{
+  %% \ifundef{\@alternative}{
+  %%    \par{
+  %%    	 \bigskip\center{\Large \color{accentcolor}\textbf{#1}\color{Black}}\par
+  %%    }
+  %%    \bigskip
+  %% }{
+    \large{#1}
+  %% }
+}
+
+\newcommand\accentcolor[1]{\color{accentcolor}#1\color{Black}}
+
 \newcommand\experiencewithblurb[8]{
-  \textbf{#1}    & \textbf{#2, \textsc{#3}, #4}   								\\*
-  \textbf{#5}    & \textit{#6} \\*
-                 & \begin{minipage}[t]{\rightcolumnlength}
-  					         #7
-                   \end{minipage}										\\*
-                 & \footnotesize{\foreach \n in {#8}{\cvtag{\n}}} 	\\
+  #1    & \textbf{\accentcolor{#2}} \textsc{#3} \hfill #4   								\\*
+  #5    & \textit{#6} \\*
+        & \begin{minipage}[t]{\rightcolumnlength}
+  		         #7
+          \end{minipage}										\\*
+        & \footnotesize{\foreach \n in {#8}{\cvtag{\n}}} 	\\
   }
 
 \newcommand\sectionHeader[1]{\section{\texorpdfstring{\color{accentcolor}\textsc{#1}}{#1}}}
@@ -46,22 +62,23 @@
       {Senior Machine Learning Software Engineer}
       {New York}
       {03/2021}
-      {Member of ML Platform.}
+      {Member of ML Platform. Working on: centralized, multi-tenant ML
+        orchestration infrastructure with Kubernetes and
+        \href{http://kubeflow.org/}{Kubeflow}; and user-facing
+        pipeline-authoring SDK based on \href{http://tensorflow.org/tfx/}{TFX}.
+      }
       {
         \begin{itemize}
-        \item Working on: centralized, multi-tenant ML orchestration
-          infrastructure with Kubernetes and \href{http://kubeflow.org/}{Kubeflow}; and user-facing
-          pipeline-authoring SDK based on \href{http://tensorflow.org/tfx/}{TFX}
-        \item Implemented standardized, on-by-default resource quotas to
+        \item Implemented standardized, per-team resource quotas to
           mitigate risk of noisy neighbor effect in centralized Kubeflow
-          clusters
+          clusters;
         \item Oversaw comprehensive formalization of SLO-tracking strategy,
           using Terraform to formalize SLOs in
           \href{https://cloud.google.com/stackdriver/docs/solutions/slo-monitoring}{GCP}
-          for all clusters in our multi-cluster in reproducible fashion
+          for all clusters in our multi-cluster in reproducible fashion;
         \item Spearheaded development of a custom metrics exporter, transforming
           Kubernetes events into actionable Prometheus metrics to address gaps
-          in our observability/reliability strategy
+          in our observability/reliability strategy.
         \end{itemize}
       }
       {TensorFlow, TFX, Kubernetes, Kubeflow, GCP, Terraform, Prometheus, gRPC}
@@ -74,17 +91,21 @@
       {Senior Systems Software Engineer, AI Infrastructure}
       {New York}
       {12/2019}
-      {Member of AI Infrastructure. Contributor to \href{https://blogs.nvidia.com/blog/2018/09/13/how-maglev-speeds-autonomous-vehicles-to-superhuman-levels-of-safety/}{MagLev}, NVIDIA’s AI infrastructure for autonomous vehicle development. Also contributed to Modulus, the deep learning SDK for autonomous vehicle R\&D.}
+      {Member of AI Infrastructure. Contributor to
+        \href{https://blogs.nvidia.com/blog/2018/09/13/how-maglev-speeds-autonomous-vehicles-to-superhuman-levels-of-safety/}{MagLev},
+        NVIDIA’s AI infrastructure for autonomous vehicle development. Also
+        contributed to Modulus, the deep learning SDK for autonomous vehicle
+        R\&D.}
       {
         \begin{itemize}
-        \item Developing solution for “hybrid data/model parallelism” using a
-          Ray-based parameter server design and Horovod to enable
-          horizontally-scalable multi-task training
+        \item Initiated development of solution for ``hybrid data/model
+          parallelism'' using a Ray-based parameter server design and Horovod to
+          enable horizontally-scalable multi-task training;
         \item Co-delivered a Kubernetes-based scheduling mechanism to enable
           priority access to cluster resources for select use cases, e.g. prep for
-          upcoming external demos, via virtual “resource shares”
+          upcoming external demos, via virtual ``resource shares'';
         \item Authored self-service, reproducible, and traceable workflows to
-          generate “miniaturized” production datasets, enabling rapid
+          generate ``miniaturized'' production datasets, enabling rapid
           iteration/prototyping of training infrastructure refinements
         \end{itemize}
       }
@@ -98,7 +119,9 @@
       {Machine Learning Software Engineer}
       {New York}
       {08/2018}
-      {Member of \href{http://cortex.twitter.com}{Cortex}, Twitter’s central ML platform organization. Worked on: workflow orchestration; experiment management/iteration; and overall ML engineering productivity.}
+      {Member of \href{http://cortex.twitter.com}{Cortex}, Twitter's central ML
+        platform organization. Worked on: workflow orchestration; experiment
+        management/iteration; and overall ML engineering productivity.}
       {
         \begin{itemize}
         \item Core contributor to
