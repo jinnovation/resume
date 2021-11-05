@@ -195,15 +195,12 @@
              management/iteration; and overall ML engineering productivity.}
            {
              \begin{itemize}
-             \item Core contributor to
-               \link{https://blog.twitter.com/engineering/en_us/topics/insights/2018/ml-workflows.html}{ML
-                 Workflows}, Twitter’s Airflow-based platform for productionizing ML
-               pipelines
              \item
-               Spearheaded initial integration and cross-compatibility of
-               \link{http://tensorflow.org/tfx/}{TensorFlow Extended (TFX)} with ML
-               Workflows to increase agility of workflow development, iterative
-               execution/experimentation, etc.
+               Spearheaded initial integration of
+               \link{http://tensorflow.org/tfx/}{TensorFlow Extended (TFX)} with
+               \link{https://blog.twitter.com/engineering/en_us/topics/insights/2018/ml-workflows.html}{legacy
+                 Airflow-based orchestration platform} to increase agility of
+               workflow development, iterative execution/experimentation, etc.
              \item
                Enabled distributed training of TensorFlow models in Apache Mesos from
                an Airflow pipeline via
@@ -248,8 +245,8 @@
            {Contributed to backend service development as part of a 10-person backend engineering team.}
            {
              \begin{itemize}
-             \item Implemented prototype collaborative filtering functionality for
-               matching between prospectively compatible users.
+             \item Implemented collaborative filtering for matching between
+               prospectively compatible users.
              \end{itemize}
            }
            {C++}
@@ -310,6 +307,70 @@
        \scholarshipentry{2015}{\textbf{University of Chicago}, B.S. Computer Science, B.A. Economics}
      \end{scholarship}
 
+   #+end_src
+
+** Speaking
+   :PROPERTIES:
+   :header-args:latex: tangle: no
+   :END:
+
+   #+begin_src latex
+     \sectionHeader{Speaking}
+
+     \begin{scholarship}
+
+       \scholarshipentry
+           {2021}
+           {
+             \textbf{\link
+               {https://events.linuxfoundation.org/kubecon-cloudnativecon-north-america/}
+               {KubeCon + CloudNativeCon North America 2021}
+             },
+             \link
+             {https://www.youtube.com/watch?v=KUyEuY5ZSqI}
+             {``Scaling Kubeflow for Multi-tenancy at Spotify''}
+           }
+
+       \scholarshipentry
+           {2019}
+           {
+             \textbf{\link
+               {http://ainyc19.xnextcon.com/}
+               {AI NEXTCon, New York}
+             },
+             ``ML Workflows at Twitter: Lessons Learned''
+           }
+     \end{scholarship}
+   #+end_src
+
+** Writing
+   :PROPERTIES:
+   :header-args:latex: tangle: no
+   :END:
+
+   #+begin_src latex
+     \sectionHeader{Writing}
+
+     \begin{scholarship}
+
+       \scholarshipentry
+           {2018}
+           {
+             \textbf{Uber Engineering Blog},
+             \link
+             {https://eng.uber.com/anomaly-detection/}
+             {``Implementing Model-Agnosticism in Uber’s Real-Time Anomaly Detection Platform''}
+           }
+
+       \scholarshipentry
+           {2018}
+           {
+             \textbf{Uber Engineering Blog},
+             \link
+             {http://eng.uber.com/observability-anomaly-detection/}
+             {``Engineering a Job-based Forecasting Workflow for Observability Anomaly Detection''}
+           }
+     \end{scholarship}
    #+end_src
 
 ** Tail
