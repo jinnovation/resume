@@ -2,7 +2,7 @@
 
 #+PROPERTY: header-args:latex :exports code :results none :tangle resume.tex
 
-* Preamble                                                              :ignore:
+* Preamble
 
   #+begin_src latex
     % !TEX TS-program = lualatex
@@ -103,198 +103,217 @@
 
 * Content
 
-  Section up accordingly.
+** Head
+
+   #+begin_src latex
+     \begin{document}
+
+     %% cls sets French as the default babel language; we undo that here.
+     \selectlanguage{english}
+
+     \makecvheader
+
+     \makecvfooter
+         {\textsc{\today}}
+         {\textsc{Jonathan Jin}}
+         {}
+
+   #+end_src
+
+** Experience
+
+   #+begin_src latex
+     \sectionHeader{Experience}
+
+     \begin{experiences}
+
+       \experiencewithblurb
+           {Present}
+           {Spotify}
+           {Senior Machine Learning Software Engineer}
+           {New York}
+           {03/2021}
+           {Member of ML Platform. Working on: centralized, multi-tenant ML
+             orchestration infrastructure with Kubernetes and
+             \link{http://kubeflow.org/}{Kubeflow}; and user-facing
+             pipeline-authoring SDK based on \link{http://tensorflow.org/tfx/}{TFX}.
+           }
+           {
+             \begin{itemize}
+             \item Implemented standardized, per-team resource quotas to
+               mitigate risk of noisy neighbor effect in centralized Kubeflow
+               clusters;
+             \item Oversaw comprehensive formalization of SLO-tracking strategy,
+               using Terraform to formalize SLOs in
+               \link{https://cloud.google.com/stackdriver/docs/solutions/slo-monitoring}{GCP}
+               for all clusters in our multi-cluster in reproducible fashion;
+             \item Spearheaded development of a custom metrics exporter, transforming
+               Kubernetes events into actionable Prometheus metrics to address gaps
+               in our observability/reliability strategy.
+             \end{itemize}
+           }
+           {TensorFlow, TFX, Kubernetes, Kubeflow, GCP, Terraform, Prometheus, gRPC}
+
+       \emptySeparator
+
+       \experiencewithblurb
+           {01/2021}
+           {NVIDIA}
+           {Senior Systems Software Engineer, AI Infrastructure}
+           {New York}
+           {12/2019}
+           {Member of AI Infrastructure. Contributor to
+             \link{https://blogs.nvidia.com/blog/2018/09/13/how-maglev-speeds-autonomous-vehicles-to-superhuman-levels-of-safety/}{MagLev},
+             NVIDIA’s AI infrastructure for autonomous vehicle development. Also
+             contributed to Modulus, the deep learning SDK for autonomous vehicle
+             R\&D.}
+           {
+             \begin{itemize}
+             \item Initiated development of solution for ``hybrid data/model
+               parallelism'' using a Ray-based parameter server design and Horovod to
+               enable horizontally-scalable multi-task training;
+             \item Co-delivered a Kubernetes-based scheduling mechanism to enable
+               priority access to cluster resources for select use cases, e.g. prep for
+               upcoming external demos, via virtual ``resource shares'';
+             \item Authored self-service, reproducible, and traceable workflows to
+               generate ``miniaturized'' production datasets, enabling rapid
+               iteration/prototyping of training infrastructure refinements
+             \end{itemize}
+           }
+           {Kubernetes, TensorFlow, Horovod, Ray, gRPC, Bazel, SwiftStack}
+
+       \emptySeparator
+
+       \experiencewithblurb
+           {12/2019}
+           {Twitter}
+           {Machine Learning Software Engineer}
+           {New York}
+           {08/2018}
+           {Member of \link{http://cortex.twitter.com}{Cortex}, Twitter's central ML
+             platform organization. Worked on: workflow orchestration; experiment
+             management/iteration; and overall ML engineering productivity.}
+           {
+             \begin{itemize}
+             \item Core contributor to
+               \link{https://blog.twitter.com/engineering/en_us/topics/insights/2018/ml-workflows.html}{ML
+                 Workflows}, Twitter’s Airflow-based platform for productionizing ML
+               pipelines
+             \item
+               Spearheaded initial integration and cross-compatibility of
+               \link{http://tensorflow.org/tfx/}{TensorFlow Extended (TFX)} with ML
+               Workflows to increase agility of workflow development, iterative
+               execution/experimentation, etc.
+             \item
+               Enabled distributed training of TensorFlow models in Apache Mesos from
+               an Airflow pipeline via
+               \link{https://blog.twitter.com/engineering/en_us/topics/insights/2018/twittertensorflow.html}{Deepbird},
+               Twitter’s TensorFlow-based model training/evaluating/serving framework
+             \end{itemize}
+           }
+           {Apache Airflow, Apache Aurora, TensorFlow}
+
+       \emptySeparator
+
+       \experiencewithblurb
+           {07/2018}
+           {Uber}
+           {Software Engineer}
+           {New York}
+           {07/2016}
+           {Member of \link{https://eng.uber.com/observability-at-scale/}{Observability Applications}. Worked on forecasting and anomaly detection for time series metrics.}
+           {
+             \begin{itemize}
+             \item
+               Re-architected time-series metric forecasting pipeline to support
+               concurrent batch backfilling; reduced asymptotic burden on underlying
+               data store by ~90\%
+             \item
+               Extended M3-based anomaly detection platform to support multiple
+               forecasting models; carried out migration to intercommunicating
+               services with zero downtime and full backwards compatibility
+
+             \end{itemize}
+           }
+           {Go, Java, M3, Apache Thrift, Cassandra}
+
+       \emptySeparator
+
+       \experiencewithblurb
+           {07/2016}
+           {OkCupid}
+           {Software Engineer}
+           {New York}
+           {07/2015}
+           {Contributed to backend service development as part of a 10-person backend engineering team.}
+           {
+             \begin{itemize}
+             \item Implemented prototype collaborative filtering functionality for
+               matching between prospectively compatible users.
+             \end{itemize}
+           }
+           {C++}
+     \end{experiences}
+
+   #+end_src
+
+** Skills
+
+   #+begin_src latex
+     \sectionHeader{Skills}
+
+     \begin{keywords}
+       \keywordsentry{Programming Languages}
+       {
+         Python,
+         Go,
+         Bash,
+         C++,
+         Java
+       }
+       \keywordsentry{Machine Learning}
+       {
+         Kubeflow,
+         TensorFlow Extended (TFX),
+         TensorFlow
+       }
+       \keywordsentry{Distributed Systems}
+       {
+         Kubernetes,
+         gRPC
+       }
+       \keywordsentry{Infrastructure Tooling}
+       {
+         Bazel,
+         Prometheus,
+         Grafana,
+         M3,
+         Cassandra,
+         Apache Airflow
+       }
+
+       \keywordsentry{Cloud Infrastructure}
+       {
+         Google Cloud Platform (GCP),
+         Terraform
+       }
+     \end{keywords}
+
+   #+end_src
+
+** Education
+
+   #+begin_src latex
+     \sectionHeader{Education}
+
+     \begin{scholarship}
+       \scholarshipentry{2015}{\textbf{University of Chicago}, B.S. Computer Science, B.A. Economics}
+     \end{scholarship}
+
+   #+end_src
+
+** Tail
 
   #+begin_src latex
-    \begin{document}
-
-    %% cls sets French as the default babel language; we undo that here.
-    \selectlanguage{english}
-
-    \makecvheader
-
-    \makecvfooter
-        {\textsc{\today}}
-        {\textsc{Jonathan Jin}}
-        {}
-
-    \sectionHeader{Experience}
-
-    \begin{experiences}
-
-      \experiencewithblurb
-          {Present}
-          {Spotify}
-          {Senior Machine Learning Software Engineer}
-          {New York}
-          {03/2021}
-          {Member of ML Platform. Working on: centralized, multi-tenant ML
-            orchestration infrastructure with Kubernetes and
-            \link{http://kubeflow.org/}{Kubeflow}; and user-facing
-            pipeline-authoring SDK based on \link{http://tensorflow.org/tfx/}{TFX}.
-          }
-          {
-            \begin{itemize}
-            \item Implemented standardized, per-team resource quotas to
-              mitigate risk of noisy neighbor effect in centralized Kubeflow
-              clusters;
-            \item Oversaw comprehensive formalization of SLO-tracking strategy,
-              using Terraform to formalize SLOs in
-              \link{https://cloud.google.com/stackdriver/docs/solutions/slo-monitoring}{GCP}
-              for all clusters in our multi-cluster in reproducible fashion;
-            \item Spearheaded development of a custom metrics exporter, transforming
-              Kubernetes events into actionable Prometheus metrics to address gaps
-              in our observability/reliability strategy.
-            \end{itemize}
-          }
-          {TensorFlow, TFX, Kubernetes, Kubeflow, GCP, Terraform, Prometheus, gRPC}
-
-      \emptySeparator
-
-      \experiencewithblurb
-          {01/2021}
-          {NVIDIA}
-          {Senior Systems Software Engineer, AI Infrastructure}
-          {New York}
-          {12/2019}
-          {Member of AI Infrastructure. Contributor to
-            \link{https://blogs.nvidia.com/blog/2018/09/13/how-maglev-speeds-autonomous-vehicles-to-superhuman-levels-of-safety/}{MagLev},
-            NVIDIA’s AI infrastructure for autonomous vehicle development. Also
-            contributed to Modulus, the deep learning SDK for autonomous vehicle
-            R\&D.}
-          {
-            \begin{itemize}
-            \item Initiated development of solution for ``hybrid data/model
-              parallelism'' using a Ray-based parameter server design and Horovod to
-              enable horizontally-scalable multi-task training;
-            \item Co-delivered a Kubernetes-based scheduling mechanism to enable
-              priority access to cluster resources for select use cases, e.g. prep for
-              upcoming external demos, via virtual ``resource shares'';
-            \item Authored self-service, reproducible, and traceable workflows to
-              generate ``miniaturized'' production datasets, enabling rapid
-              iteration/prototyping of training infrastructure refinements
-            \end{itemize}
-          }
-          {Kubernetes, TensorFlow, Horovod, Ray, gRPC, Bazel, SwiftStack}
-
-      \emptySeparator
-
-      \experiencewithblurb
-          {12/2019}
-          {Twitter}
-          {Machine Learning Software Engineer}
-          {New York}
-          {08/2018}
-          {Member of \link{http://cortex.twitter.com}{Cortex}, Twitter's central ML
-            platform organization. Worked on: workflow orchestration; experiment
-            management/iteration; and overall ML engineering productivity.}
-          {
-            \begin{itemize}
-            \item Core contributor to
-              \link{https://blog.twitter.com/engineering/en_us/topics/insights/2018/ml-workflows.html}{ML
-                Workflows}, Twitter’s Airflow-based platform for productionizing ML
-              pipelines
-            \item
-              Spearheaded initial integration and cross-compatibility of
-              \link{http://tensorflow.org/tfx/}{TensorFlow Extended (TFX)} with ML
-              Workflows to increase agility of workflow development, iterative
-              execution/experimentation, etc.
-            \item
-              Enabled distributed training of TensorFlow models in Apache Mesos from
-              an Airflow pipeline via
-              \link{https://blog.twitter.com/engineering/en_us/topics/insights/2018/twittertensorflow.html}{Deepbird},
-              Twitter’s TensorFlow-based model training/evaluating/serving framework
-            \end{itemize}
-          }
-          {Apache Airflow, Apache Aurora, TensorFlow}
-
-      \emptySeparator
-
-      \experiencewithblurb
-          {07/2018}
-          {Uber}
-          {Software Engineer}
-          {New York}
-          {07/2016}
-          {Member of \link{https://eng.uber.com/observability-at-scale/}{Observability Applications}. Worked on forecasting and anomaly detection for time series metrics.}
-          {
-            \begin{itemize}
-            \item
-              Re-architected time-series metric forecasting pipeline to support
-              concurrent batch backfilling; reduced asymptotic burden on underlying
-              data store by ~90\%
-            \item
-              Extended M3-based anomaly detection platform to support multiple
-              forecasting models; carried out migration to intercommunicating
-              services with zero downtime and full backwards compatibility
-
-            \end{itemize}
-          }
-          {Go, Java, M3, Apache Thrift, Cassandra}
-
-      \emptySeparator
-
-      \experiencewithblurb
-          {07/2016}
-          {OkCupid}
-          {Software Engineer}
-          {New York}
-          {07/2015}
-          {Contributed to backend service development as part of a 10-person backend engineering team.}
-          {
-            \begin{itemize}
-            \item Implemented prototype collaborative filtering functionality for
-              matching between prospectively compatible users.
-            \end{itemize}
-          }
-          {C++}
-    \end{experiences}
-
-    \sectionHeader{Skills}
-
-    \begin{keywords}
-      \keywordsentry{Programming Languages}
-      {
-        Python,
-        Go,
-        Bash,
-        C++,
-        Java
-      }
-      \keywordsentry{Machine Learning}
-      {
-        Kubeflow,
-        TensorFlow Extended (TFX),
-        TensorFlow
-      }
-      \keywordsentry{Distributed Systems}
-      {
-        Kubernetes,
-        gRPC
-      }
-      \keywordsentry{Infrastructure Tooling}
-      {
-        Bazel,
-        Prometheus,
-        Grafana,
-        M3,
-        Cassandra,
-        Apache Airflow
-      }
-
-      \keywordsentry{Cloud Infrastructure}
-      {
-        Google Cloud Platform (GCP),
-        Terraform
-      }
-    \end{keywords}
-
-    \sectionHeader{Education}
-
-    \begin{scholarship}
-      \scholarshipentry{2015}
-      {\textbf{University of Chicago}, B.S. Computer Science, B.A. Economics}
-    \end{scholarship}
-
     \end{document}
   #+end_src
