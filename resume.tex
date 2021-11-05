@@ -2,6 +2,15 @@
 
 \documentclass[alternative,10pt,compact]{yaac-another-awesome-cv}
 
+\name{Jonathan}{Jin}
+\tagline{Machine Learning Infrastructure Engineer}
+\socialinfo{
+  \website{https://jonathanj.in}{jonathanj.in}
+  \email{me@jonathanj.in}
+  \linkedin{jinnovation}
+  \github{jinnovation}
+}
+
 \renewcommand\user[2]{\color{accentcolor}{\LARGE\textbf{#1 #2}}\color{Black}}
 
 \renewcommand\resumetitle[1]{
@@ -15,30 +24,21 @@
   %% }
 }
 
-\newcommand\accentcolor[1]{\color{accentcolor}#1\color{Black}}
+\setleftcolumnlength{1.5cm}
+\setlength{\rightcolumnlength}{\dimexpr(\rightcolumnlength-0.5cm)\relax}
 
 \newcommand\experiencewithblurb[8]{
-  #1    & \textbf{\accentcolor{#2}} \textsc{#3} \hfill #4   								\\*
+  #1    & \textbf{\accentcolor{#2}} \textsc{#3} \hfill #4   \\*
   #5    & \textit{#6} \\*
         & \begin{minipage}[t]{\rightcolumnlength}
-  		         #7
-          \end{minipage}										\\*
+            #7
+          \end{minipage}									\\*
         & \footnotesize{\foreach \n in {#8}{\cvtag{\n}}} 	\\
-  }
+}
 
 \newcommand\sectionHeader[1]{\section{\texorpdfstring{\color{accentcolor}\textsc{#1}}{#1}}}
 
-\name{Jonathan}{Jin}
-\tagline{Machine Learning Infrastructure Engineer}
-\socialinfo{
-  \website{https://jonathanj.in}{jonathanj.in}
-  \email{me@jonathanj.in}
-  \linkedin{jinnovation}
-  \github{jinnovation}
-}
-
-\setleftcolumnlength{1.5cm}
-\setlength{\rightcolumnlength}{\dimexpr(\rightcolumnlength-0.5cm)\relax}
+\newcommand\accentcolor[1]{\color{accentcolor}#1\color{Black}}
 
 \begin{document}
 
