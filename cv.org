@@ -4,6 +4,10 @@
 
 * Preamble
 
+  #+begin_src bash
+    brew install font-source-sans-pro💸
+  #+end_src
+
   #+begin_src latex
     % !TEX TS-program = lualatex
 
