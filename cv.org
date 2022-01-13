@@ -144,9 +144,6 @@
            }
            {
              \begin{itemize}
-             \item Implemented standardized, per-team resource quotas to
-               mitigate risk of noisy neighbor effect in centralized Kubeflow
-               clusters;
              \item Oversaw comprehensive formalization of SLO-tracking strategy,
                using Terraform to formalize SLOs in
                \link{https://cloud.google.com/stackdriver/docs/solutions/slo-monitoring}{GCP}
@@ -179,9 +176,6 @@
              \item Co-delivered a Kubernetes-based scheduling mechanism to enable
                priority access to cluster resources for select use cases, e.g. prep for
                upcoming external demos, via virtual ``resource shares'';
-             \item Authored self-service, reproducible, and traceable workflows to
-               generate ``miniaturized'' production datasets, enabling rapid
-               iteration/prototyping of training infrastructure refinements
              \end{itemize}
            }
            {Kubernetes, TensorFlow, Horovod, Ray, gRPC, Bazel, SwiftStack}
