@@ -144,6 +144,20 @@
            }
            {
              \begin{itemize}
+               %% TODO: Talk about Ray work
+               %% \item Leading a multi-quarter migration of our TFX-based, user-facing
+               %%   SDK to TFX's Protobuf-based ``intermediate
+               %%   representation''. Implemented design and carried out gradual rollout
+               %%   and deprecation strategy of the ``legacy'' pipeline submission
+               %%   logic, with zero user-facing impact;
+               %% \item Spearheaded, in collaboration with product and engineering
+               %%   management, the promotion of our pipeline orchestration
+               %%   infrastructure + SDK to general availability, helping to define
+               %%   requirements and core tenets;
+               %% \item Spearheaded the development of a formal API design philosophy
+               %%   and strategy for our user-facing pipeline-authoring SDK, overhauling
+               %%   documentation system for full API coverage and formalizing API
+               %%   deprecation strategy, optimizing for user clarity and zero ambiguity;
              \item Oversaw comprehensive formalization of SLO-tracking strategy,
                using Terraform to formalize SLOs in
                \link{https://cloud.google.com/stackdriver/docs/solutions/slo-monitoring}{GCP}
