@@ -127,20 +127,24 @@
 ** Experience
 
    #+begin_src latex
-     \sectionHeader{Experience}
-
+     \sectionHeader{Select Experience}
      \begin{experiences}
+   #+end_src
 
+   #+begin_src latex
        \experiencewithblurb
            {Present}
            {Spotify}
            {Senior Machine Learning Software Engineer}
            {New York}
            {03/2021}
-           {Member of ML Platform. Working on: centralized, multi-tenant ML
-             orchestration infrastructure with Kubernetes and
-             \link{http://kubeflow.org/}{Kubeflow}; and user-facing
-             pipeline-authoring SDK based on \link{http://tensorflow.org/tfx/}{TFX}.
+           {
+             Member of ML Platform. Working on: multi-cluster, ML-centric cloud
+             infrastructure with Kubernetes and
+             \link{http://kubeflow.org/}{Kubeflow}; and ML engineering SDKs, based
+             around \link{http://tensorflow.org/tfx/}{TFX}, for pipeline
+             orchestration, feature engineering, data processing, model analysis +
+             validation, model deployment, etc.
            }
            {
              \begin{itemize}
@@ -150,18 +154,18 @@
                %%   representation''. Implemented design and carried out gradual rollout
                %%   and deprecation strategy of the ``legacy'' pipeline submission
                %%   logic, with zero user-facing impact;
-               %% \item Spearheaded, in collaboration with product and engineering
-               %%   management, the promotion of our pipeline orchestration
-               %%   infrastructure + SDK to general availability, helping to define
-               %%   requirements and core tenets;
-               %% \item Spearheaded the development of a formal API design philosophy
-               %%   and strategy for our user-facing pipeline-authoring SDK, overhauling
-               %%   documentation system for full API coverage and formalizing API
-               %%   deprecation strategy, optimizing for user clarity and zero ambiguity;
-             \item Oversaw comprehensive formalization of SLO-tracking strategy,
-               using Terraform to formalize SLOs in
-               \link{https://cloud.google.com/stackdriver/docs/solutions/slo-monitoring}{GCP}
-               for all clusters in our multi-cluster in reproducible fashion;
+
+             \item Drove the promotion of our joint SDK/infrastructure offering,
+               Spotify Kubeflow (SKF), to general availability; established baseline
+               product excellence, e.g. API design philosophy, documentation tooling,
+               etc.;
+
+             \item Evangelized the use of rigorous observability tooling to define
+               and track SLOs for our multi-cluster, ML-centric cloud infrastructure;
+               established a SLO-tracking strategy, using Terraform to reproducibly
+               formalize SLOs in GCP for all clusters in our multi-cluster
+               infrastructure;
+
              \item Spearheaded development of a custom metrics exporter, transforming
                Kubernetes events into actionable Prometheus metrics to address gaps
                in our observability/reliability strategy.
@@ -221,49 +225,52 @@
              \end{itemize}
            }
            {Apache Airflow, Apache Aurora, TensorFlow}
+   #+end_src
 
-       \emptySeparator
+   #+begin_src latex :tangle no
+     \emptySeparator
 
-       \experiencewithblurb
-           {07/2018}
-           {Uber}
-           {Software Engineer}
-           {New York}
-           {07/2016}
-           {Member of \link{https://eng.uber.com/observability-at-scale/}{Observability Applications}. Worked on forecasting and anomaly detection for time series metrics.}
-           {
-             \begin{itemize}
-             \item
-               Re-architected time-series metric forecasting pipeline to support
-               concurrent batch backfilling; reduced asymptotic burden on underlying
-               data store by ~90\%
-             \item
-               Extended M3-based anomaly detection platform to support multiple
-               forecasting models; carried out migration to intercommunicating
-               services with zero downtime and full backwards compatibility
+     \experiencewithblurb
+         {07/2018}
+         {Uber}
+         {Software Engineer}
+         {New York}
+         {07/2016}
+         {Member of \link{https://eng.uber.com/observability-at-scale/}{Observability Applications}. Worked on forecasting and anomaly detection for time series metrics.}
+         {
+           \begin{itemize}
+           \item
+             Re-architected time-series metric forecasting pipeline to support
+             concurrent batch backfilling; reduced asymptotic burden on underlying
+             data store by ~90\%
+           \item
+             Extended M3-based anomaly detection platform to support multiple
+             forecasting models; carried out migration to intercommunicating
+             services with zero downtime and full backwards compatibility
 
-             \end{itemize}
-           }
-           {Go, Java, M3, Apache Thrift, Cassandra}
+           \end{itemize}
+         }
+         {Go, Java, M3, Apache Thrift, Cassandra}
+     \emptySeparator
 
-       \emptySeparator
+     \experiencewithblurb
+         {07/2016}
+         {OkCupid}
+         {Software Engineer}
+         {New York}
+         {07/2015}
+         {Contributed to backend service development as part of a 10-person backend engineering team.}
+         {
+           \begin{itemize}
+           \item Implemented collaborative filtering for matching between
+             prospectively compatible users.
+           \end{itemize}
+         }
+         {C++}
+   #+end_src
 
-       \experiencewithblurb
-           {07/2016}
-           {OkCupid}
-           {Software Engineer}
-           {New York}
-           {07/2015}
-           {Contributed to backend service development as part of a 10-person backend engineering team.}
-           {
-             \begin{itemize}
-             \item Implemented collaborative filtering for matching between
-               prospectively compatible users.
-             \end{itemize}
-           }
-           {C++}
+   #+begin_src latex
      \end{experiences}
-
    #+end_src
 
 ** Skills
@@ -290,7 +297,8 @@
        \keywordsentry{Distributed Systems}
        {
          Kubernetes,
-         gRPC
+         gRPC,
+         Docker
        }
        \keywordsentry{Infrastructure Tooling}
        {
