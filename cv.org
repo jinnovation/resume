@@ -117,10 +117,10 @@
 
      \makecvheader
 
-     \makecvfooter
-         {\textsc{\today}}
-         {\textsc{Jonathan Jin}}
-         {}
+     %% \makecvfooter
+     %%     {\textsc{\today}}
+     %%     {\textsc{Jonathan Jin}}
+     %%     {}
 
    #+end_src
 
