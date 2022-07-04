@@ -132,99 +132,103 @@
    #+end_src
 
    #+begin_src latex
-       \experiencewithblurb
-           {Present}
-           {Spotify}
-           {Senior Machine Learning Software Engineer}
-           {New York}
-           {03/2021}
-           {
-             Member of ML Platform. Working on: multi-cluster, ML-centric cloud
-             infrastructure with Kubernetes and
-             \link{http://kubeflow.org/}{Kubeflow}; and ML engineering SDKs, based
-             around \link{http://tensorflow.org/tfx/}{TFX}, for pipeline
-             orchestration, feature engineering, data processing, model analysis +
-             validation, model deployment, etc.
-           }
-           {
-             \begin{itemize}
-               %% TODO: Talk about Ray work
-               %% \item Leading a multi-quarter migration of our TFX-based, user-facing
-               %%   SDK to TFX's Protobuf-based ``intermediate
-               %%   representation''. Implemented design and carried out gradual rollout
-               %%   and deprecation strategy of the ``legacy'' pipeline submission
-               %%   logic, with zero user-facing impact;
+     \experiencewithblurb
+         {Present}
+         {Spotify}
+         {Senior Machine Learning Software Engineer}
+         {New York}
+         {03/2021}
+         {
+           Member of ML Platform. Working on: multi-cluster, ML-centric cloud
+           infrastructure with Kubernetes and
+           \link{http://kubeflow.org/}{Kubeflow}; and ML engineering SDKs, based
+           around \link{http://tensorflow.org/tfx/}{TFX}, for pipeline
+           orchestration, feature engineering, data processing, model analysis +
+           validation, model deployment, etc.
+         }
+         {
+           \begin{itemize}
+           \item Spearheading design and development of a unified user-facing
+             configuration plane for platform's products; authored and drove
+             consensus of architecture and design; guided multi-quarter development
+             roadmap and coordinated cross-team collaboration;
 
-             \item Drove the promotion of our joint SDK/infrastructure offering,
-               Spotify Kubeflow (SKF), to general availability; established baseline
-               product excellence, e.g. API design philosophy, documentation tooling,
-               etc.;
+           \item Designed formal, opinionated ontology of MLOps semantics to enable
+             auditability of ML usage in production and form the basis of Spotify's
+             Response AI initiatives, e.g. model cards;
 
-             \item Evangelized the use of rigorous observability tooling to define
-               and track SLOs for our multi-cluster, ML-centric cloud infrastructure;
-               established a SLO-tracking strategy, using Terraform to reproducibly
-               formalize SLOs in GCP for all clusters in our multi-cluster
-               infrastructure;
+           \item Drove team's primary product (managed Kubernetes cluster
+             infrastructure with companion SDK) to general availability; collaborated
+             with engineering and product leadership to identify and establish
+             baseline product excellence, e.g. API design philosophy, documentation
+             tooling, explicit reliability guarantees (SLOs), etc.;
 
-             \item Spearheaded development of a custom metrics exporter, transforming
-               Kubernetes events into actionable Prometheus metrics to address gaps
-               in our observability/reliability strategy.
-             \end{itemize}
-           }
-           {TensorFlow, TFX, Kubernetes, Kubeflow, GCP, Terraform, Prometheus, gRPC, Ray}
+           \item Implemented formalized SLO tracking for multi-cluster, pipeline
+             execution infrastructure; used Terraform to canonicalize SLO definitions
+             for monitoring and violation reporting in Google Cloud Monitoring;
+             implemented custom Kubernetes listener to implement nuanced and
+             domain-specific SLIs.
 
-       \emptySeparator
+           \item Onboarded four new junior engineers in less than a year; held
+             biweekly one-on-ones with each to address concerns, collaborate to
+             identify growth opportunities, and provide technical and career
+             coaching.
+           \end{itemize}
+         }
+         {Kubernetes, Ray, GCP, Terraform, TensorFlow, TFX, Kubeflow, Prometheus, gRPC}
 
-       \experiencewithblurb
-           {01/2021}
-           {NVIDIA}
-           {Senior Systems Software Engineer, AI Infrastructure}
-           {New York}
-           {12/2019}
-           {Member of AI Infrastructure. Contributor to
-             \link{https://blogs.nvidia.com/blog/2018/09/13/how-maglev-speeds-autonomous-vehicles-to-superhuman-levels-of-safety/}{MagLev},
-             NVIDIA’s AI infrastructure for autonomous vehicle development. Also
-             contributed to Modulus, the deep learning SDK for autonomous vehicle
-             R\&D.}
-           {
-             \begin{itemize}
-             \item Initiated development of solution for ``hybrid data/model
-               parallelism'' using a Ray-based parameter server design and Horovod to
-               enable horizontally-scalable multi-task training;
-             \item Co-delivered a Kubernetes-based scheduling mechanism to enable
-               priority access to cluster resources for select use cases, e.g. prep for
-               upcoming external demos, via virtual ``resource shares'';
-             \end{itemize}
-           }
-           {Kubernetes, TensorFlow, Horovod, Ray, gRPC, Bazel, SwiftStack}
+     \emptySeparator
 
-       \emptySeparator
+     \experiencewithblurb
+         {01/2021}
+         {NVIDIA}
+         {Senior Systems Software Engineer, AI Infrastructure}
+         {New York}
+         {12/2019}
+         {Member of AI Infrastructure. Contributor to
+           \link{https://blogs.nvidia.com/blog/2018/09/13/how-maglev-speeds-autonomous-vehicles-to-superhuman-levels-of-safety/}{MagLev},
+           NVIDIA’s AI infrastructure for autonomous vehicle development. Also
+           contributed to Modulus, the deep learning SDK for autonomous vehicle
+           R\&D.}
+         {
+           \begin{itemize}
+           \item Initiated development of solution for ``hybrid data/model
+             parallelism'' using a Ray-based parameter server design and Horovod to
+             enable horizontally-scalable multi-task training;
+           \item Co-delivered a Kubernetes-based scheduling mechanism to enable
+             priority access to cluster resources for select use cases, e.g. prep for
+             upcoming external demos, via virtual ``resource shares'';
+           \end{itemize}
+         }
+         {Kubernetes, TensorFlow, Horovod, Ray, gRPC, Bazel, SwiftStack}
 
-       \experiencewithblurb
-           {12/2019}
-           {Twitter}
-           {Machine Learning Software Engineer}
-           {New York}
-           {08/2018}
-           {Member of \link{http://cortex.twitter.com}{Cortex}, Twitter's central ML
-             platform organization. Worked on: workflow orchestration; experiment
-             management/iteration; and overall ML engineering productivity.}
-           {
-             \begin{itemize}
-             \item
-               Spearheaded initial integration of
-               \link{http://tensorflow.org/tfx/}{TensorFlow Extended (TFX)} with
-               \link{https://blog.twitter.com/engineering/en_us/topics/insights/2018/ml-workflows.html}{legacy
-                 Airflow-based orchestration platform} to increase agility of
-               workflow development, iterative execution/experimentation, etc.
-             \item
-               Enabled distributed training of TensorFlow models in Apache Mesos from
-               an Airflow pipeline via
-               \link{https://blog.twitter.com/engineering/en_us/topics/insights/2018/twittertensorflow.html}{Deepbird},
-               Twitter’s TensorFlow-based model training/evaluating/serving framework
-             \end{itemize}
-           }
-           {Apache Airflow, Apache Aurora, TensorFlow}
+     \emptySeparator
+
+     \experiencewithblurb
+         {12/2019}
+         {Twitter}
+         {Machine Learning Software Engineer}
+         {New York}
+         {08/2018}
+         {Member of \link{http://cortex.twitter.com}{Cortex}, Twitter's central ML
+           platform organization. Worked on: workflow orchestration; experiment
+           management/iteration; and overall ML engineering productivity.}
+         {
+           \begin{itemize}
+           \item
+             Spearheaded initial integration of
+             \link{http://tensorflow.org/tfx/}{TensorFlow Extended (TFX)} with
+             \link{https://blog.twitter.com/engineering/en_us/topics/insights/2018/ml-workflows.html}{legacy
+               Airflow-based orchestration platform} to increase agility of
+             workflow development, iterative execution/experimentation, etc.
+           \item
+             Enabled distributed training of TensorFlow models in Apache Mesos from
+             an Airflow pipeline via
+             \link{https://blog.twitter.com/engineering/en_us/topics/insights/2018/twittertensorflow.html}{Deepbird},
+             Twitter’s TensorFlow-based model training/evaluating/serving framework
+           \end{itemize}
+         }
+         {Apache Airflow, Apache Aurora, TensorFlow}
    #+end_src
 
    #+begin_src latex :tangle no
