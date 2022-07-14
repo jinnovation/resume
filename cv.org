@@ -345,6 +345,18 @@
      \begin{scholarship}
 
        \scholarshipentry
+           {2022}
+           {
+             \textbf{\link
+               {https://mlconf.com}
+               {MLconf 2022}
+             },
+             \link
+                 {https://mlconf.com/sessions/empowering-traceable-and-auditable-ml-in-production-at-spotify-with-hendrix/}
+                 {``Empowering Traceable and Auditable ML in Production at Spotify with Hendrix''}
+           }
+
+       \scholarshipentry
            {2021}
            {
              \textbf{\link
