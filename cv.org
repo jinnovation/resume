@@ -170,9 +170,8 @@
              domain-specific SLIs.
 
            \item Onboarded four new junior engineers in less than a year; held
-             biweekly one-on-ones with each to address concerns, collaborate to
-             identify growth opportunities, and provide technical and career
-             coaching.
+             biweekly one-on-ones with each to provide technical and career
+             mentorship and address ongoing concerns.
            \end{itemize}
          }
          {Kubernetes, Ray, GCP, Terraform, TensorFlow, TFX, Kubeflow, Prometheus, gRPC}
