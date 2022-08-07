@@ -148,14 +148,11 @@
          }
          {
            \begin{itemize}
-           \item Spearheading design and development of a unified user-facing
-             configuration plane for platform's products; authored and drove
-             consensus of architecture and design; guided multi-quarter development
-             roadmap and coordinated cross-team collaboration;
-
-           \item Designed formal, opinionated ontology of MLOps semantics to enable
-             auditability of ML usage in production and form the basis of Spotify's
-             Response AI initiatives, e.g. model cards;
+             \item Leading cross-team, multi-quarter initiative to unify ML Platform
+               sub-products under shared set of product-level semantics to unlock
+               broad-sweeping platform-wide efforts, e.g. auditable ML, ``checks and
+               balances'' for production models, unified platform-wide configuration,
+               etc.;
 
            \item Drove team's primary product (managed Kubernetes cluster
              infrastructure with companion SDK) to general availability; collaborated
