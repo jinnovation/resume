@@ -1,4 +1,4 @@
-# -*- after-save-hook: (org-babel-tangle); before-save-hook: (delete-trailing-whitespace)-*-
+# -*- after-save-hook: (org-babel-tangle); before-save-hook: (delete-trailing-whitespace) -*-
 
 #+PROPERTY: header-args:latex :exports code :results none :tangle resume.tex
 
@@ -141,22 +141,23 @@
          {
            Member of ML Platform. Working on
            \link{https://twimlai.com/conf/twimlcon/2022/session/how-spotify-is-navigating-an-evolving-ml-landscape-with-hendrix-platform/}{Hendrix},
-           Spotify's centralized ML platform; multi-cluster, ML-centric cloud
-           infrastructure with Kubernetes, Kubeflow, and Ray; and ML engineering SDKs
-           for feature engineering, data processing, and model training, analysis,
-           and deployment.
+           Spotify's centralized ML platform. My focuses revolve around: ML
+           governance; cloud-native infra; and SDK development for MLOps.
          }
          {
            \begin{itemize}
+
+             \item Leading the development of a centralized model inventory system
+               for Hendrix as part of the ML Platform's Governance initiative;
 
              \item Led multi-quarter promotion of ML Platform's flagship pipeline
                orchestration product to general availability; collaborated with
                product and engineering stakeholders across peer teams within ML
                Platform as well as ``power user'' teams -- other applied ML teams at
-               Spotify -- to define engineering roadmap spanning three quarters and
-               provide technical leadership/direction on prioritization,
-               implementation, etc.; contributed to an increase in ML Platform
-               adoption of 50\% and increase in user satisfaction of 10\%.
+               Spotify -- to: define multi-quarter engineering roadmap; provide
+               technical and project leadership/direction. Contributed to an increase
+               in ML Platform adoption of 50\% and increase in user satisfaction of
+               10\%.
 
              \item Providing ongoing mentorship and support to three junior IC team
                members, i.e. half of the team's IC makeup; holding bi-weekly
@@ -174,15 +175,9 @@
              infrastructure based on KubeRay for high-performance ML prototyping and
              experimentation; collaborating with product and engineering leadership
              to concretize our platform's long-term Ray strategy;
-
-           \item Driving platform unification initiative centered around
-             ontologically-sound declarative configuration systems, based around
-             Kubernetes Operators, for compute configuration, deployment of
-             scheduled training pipelines, model serving, etc.;
-
            \end{itemize}
          }
-         {Ray, Kubernetes, GCP, Terraform, Helm, TensorFlow, TFX, Kubeflow, Prometheus, gRPC}
+         {Ray, Kubernetes, Go, GCP, Terraform, Helm, TensorFlow, TFX, Kubeflow, Prometheus, gRPC}
 
      \emptySeparator
 
