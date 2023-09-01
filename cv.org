@@ -150,7 +150,7 @@
              \item Spearheaded the development of the Hendrix Registry as part of
                company-wide AI/ML governance initiative, delivering a Backstage-based
                \link{https://ai.meta.com/blog/system-cards-a-new-resource-for-understanding-how-ai-systems-work/}{AI
-                 system} and \link{https://arxiv.org/abs/1810.03993}{model card}
+                 system } and \link{https://arxiv.org/abs/1810.03993}{model card }
                solution, resulting in over 100 models registered by 40 teams
                company-wide in under a quarter;
 
