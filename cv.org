@@ -347,6 +347,7 @@
        \keywordsentry{Infrastructure and Distributed Systems}
        {
          Google Cloud (GCP),
+         Backstage,
          Kubernetes,
          Terraform,
          Prometheus,
