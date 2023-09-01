@@ -147,10 +147,17 @@
          {
            \begin{itemize}
 
-             \item Driving the development of governance infrastructure for machine
-               learning; implementing systematic traceability and lineage-tracking
-               for production ML models; developing Backstage-based org-wide
-               standards for documentation and registration of ML models and systems;
+             \item Spearheaded the development of the Hendrix Registry as part of
+               company-wide AI/ML governance initiative, delivering a Backstage-based
+               \link{https://ai.meta.com/blog/system-cards-a-new-resource-for-understanding-how-ai-systems-work/}{AI
+                 system} and \link{https://arxiv.org/abs/1810.03993}{model card}
+               solution, resulting in over 100 models registered by 40 teams
+               company-wide in under a quarter;
+
+             \item Driving cross-functional collaboration between ML Platform and
+               Data Platform on data- and ML-native lineage solutions to empower
+               responsible AI development, manage costs, and codify org-wide best
+               practices and ML development standards;
 
              \item Led multi-quarter promotion of ML Platform's flagship pipeline
                orchestration product to general availability; collaborated with
@@ -179,7 +186,7 @@
              to concretize our platform's long-term Ray strategy;
            \end{itemize}
          }
-         {Ray, Kubernetes, Go, GCP, Terraform, Helm, TensorFlow, TFX, Kubeflow, Prometheus, gRPC}
+         {Ray, Kubernetes, Kubernetes Operators, Go, GCP, Backstage, Terraform, Helm, TensorFlow, TFX, Kubeflow, Prometheus, gRPC}
 
      \emptySeparator
 
