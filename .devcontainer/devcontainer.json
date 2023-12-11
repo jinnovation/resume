@@ -7,7 +7,7 @@
 
 	"features": {
 		 "ghcr.io/devcontainers-contrib/features/apt-get-packages:1": {
-			"packages": "texlive-latex-recommended,texlive-fonts-recommended,texlive-fonts-extra,texlive-lang-french,texlive-luatex"
+			"packages": "texlive-latex-recommended,texlive-latex-extra,texlive-bibtex-extra,texlive-fonts-recommended,texlive-fonts-extra,texlive-lang-french,texlive-luatex"
 		 }
 	},
 
