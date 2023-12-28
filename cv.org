@@ -133,26 +133,23 @@
 
    #+begin_src latex
      \experiencewithblurb
-         {Present}
+         {12/2023}
          {Spotify}
          {Senior Machine Learning Engineer}
          {New York}
          {03/2021}
          {
-           Member of ML Platform. Working on
+           Worked on
            \link{https://twimlai.com/conf/twimlcon/2022/session/how-spotify-is-navigating-an-evolving-ml-landscape-with-hendrix-platform/}{Hendrix},
-           Spotify's centralized ML platform. My focuses revolve around: ML
-           governance; cloud-native infra; and SDK development for MLOps.
+           Spotify's centralized ML platform.
          }
          {
            \begin{itemize}
 
-             \item Tech-leading a redesign of Spotify's home-grown ML experiment
-               tracking solution. Steered initial vendor evaluation, coordinating
-               vendor communications and techincal collaboration. Post-eval, led team
-               of four engineers to deliver an MVP based on MLflow in half a
+             \item Tech lead for Hendrix's experiment-tracking layer. Led team of
+               four engineers to deliver an MLflow-based MVP in half a
                quarter. Responsible for defining the strategy and roadmap for
-               experiment-tracking within Hendrix;
+               experiment-tracking and artifact management within Hendrix;
 
              \item Spearheaded the development of the Hendrix Registry as part of
                company-wide AI/ML governance initiative; collaborated with
@@ -163,11 +160,6 @@
                \link{https://engineering.atspotify.com/2023/05/fleet-management-at-spotify-part-2-the-path-to-declarative-infrastructure/}{Kubernetes-based
                  declarative infrastructure } in under a quarter, resulting in over
                100 models registered by 40 teams company-wide in less than a quarter;
-
-     %%         \item Driving cross-functional collaboration between ML Platform and
-     %%           Data Platform on ML-native data architecture and lineage solutions to
-     %%           empower responsible AI development, manage costs, and codify org-wide
-     %%           best practices and ML development standards;
 
              \item Led multi-quarter promotion of ML Platform's flagship
                Kubeflow-based orchestration product to general availability;
@@ -183,12 +175,6 @@
                one-on-ones with each to: provide technical and career mentorship;
                help identify potential future ownership areas and unblock existing
                ones; and address ongoing concerns.
-
-     %%       \item Implemented formalized SLO tracking for multi-cluster, pipeline
-     %%         execution infrastructure; used Terraform to canonicalize SLO definitions
-     %%         for monitoring and violation reporting in Google Cloud Monitoring;
-     %%         implemented custom Kubernetes listener to implement nuanced and
-     %%         domain-specific SLIs.
 
            \item Bootstrapping early-stage development of centralized, managed Ray
              infrastructure based on KubeRay for high-performance ML prototyping and
@@ -206,11 +192,7 @@
          {Senior Systems Software Engineer, AI Infrastructure}
          {New York}
          {12/2019}
-         {Member of AI Infrastructure. Contributor to
-           \link{https://blogs.nvidia.com/blog/2018/09/13/how-maglev-speeds-autonomous-vehicles-to-superhuman-levels-of-safety/}{MagLev},
-           NVIDIA’s AI infrastructure for autonomous vehicle development. Also
-           contributed to Modulus, the deep learning SDK for autonomous vehicle
-           R\&D.}
+         {Worked on AI infrastructure for autonomous vehicle research and development.}
          {
            \begin{itemize}
            \item Initiated development of solution for ``hybrid data/model
