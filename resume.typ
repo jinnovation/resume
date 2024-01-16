@@ -1,4 +1,4 @@
-#import "cv.typ/cv.typ": *
+#import "time.typ"
 
 #let cvdata = yaml("resume.yaml")
 
@@ -19,6 +19,39 @@
       #box(link(info.personal.linkedin)[#info.personal.linkedin.split("//").at(1)]) \
       #box(link(info.personal.github)[#info.personal.github.split("//").at(1)])])
 }
+
+
+#let showrules(uservars, doc) = {
+    // uppercase section headings
+    show heading.where(
+        level: 2,
+    ): it => block(width: 100%)[
+        #set align(left)
+        #set text(font: uservars.headingfont, size: 1em, weight: "bold")
+        #if (uservars.at("headingsmallcaps", default:false)) {
+            smallcaps(it.body)
+        } else {
+            upper(it.body)
+        }
+        #v(-0.75em) #line(length: 100%, stroke: 1pt + black) // draw a line
+    ]
+
+    // name title
+    show heading.where(
+        level: 1,
+    ): it => block(width: 100%)[
+        #set text(font: uservars.headingfont, size: 1.5em, weight: "bold")
+        #if (uservars.at("headingsmallcaps", default:false)) {
+            smallcaps(it.body)
+        } else {
+            upper(it.body)
+        }
+        #v(2pt)
+    ]
+
+    doc
+}
+
 
 #let cvinit(doc) = {
     set text(
@@ -53,7 +86,7 @@
     if info.speaking != none {block[
         == Speaking
         #for speaking in info.speaking {
-            let date = utils.strpdate(speaking.date)
+            let date = time.strpdate(speaking.date)
             let title = if speaking.url != none [#link(speaking.url)[#speaking.title] ] else [ #speaking.title]
             block(width: 100%, breakable: isbreakable)[
                 *#speaking.conference* #title #h(1fr) #date
@@ -66,8 +99,8 @@
     if info.work != none {block[
         == Work Experience
         #for w in info.work {
-            let start = utils.strpdate(w.startDate)
-            let end = utils.strpdate(w.endDate)
+            let start = time.strpdate(w.startDate)
+            let end = time.strpdate(w.endDate)
 
             block(width: 100%, breakable: isbreakable)[
                 #if w.at("url", default: none) != none [
