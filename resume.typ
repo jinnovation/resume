@@ -7,12 +7,10 @@
     bodyfont: "Linux Libertine",
     fontsize: 10pt, // 10pt, 11pt, 12pt
     linespacing: 6pt,
-    showAddress: false, // true/false show address in contact info
-    showNumber: false,  // true/false show phone number in contact info
     headingsmallcaps: false
 )
 
-#let cvheading(info, uservars) = {
+#let cvheading(info) = {
     table(columns: (1fr, auto), inset: 0pt, stroke: none,
       heading(level: 1)[ #info.personal.name ],
       [ #box(link("mailto:" + info.personal.email)) \
@@ -173,7 +171,7 @@
 
 #show: doc => cvinit(doc)
 
-#cvheading(cvdata, uservars)
+#cvheading(cvdata)
 #cvwork(cvdata)
 #cveducation(cvdata)
 #cvspeaking(cvdata)
