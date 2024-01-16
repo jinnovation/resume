@@ -27,38 +27,6 @@
 }
 
 
-#let showrules(uservars, doc) = {
-    // uppercase section headings
-    show heading.where(
-        level: 2,
-    ): it => block(width: 100%)[
-        #set align(left)
-        #set text(font: uservars.headingfont, size: 1em, weight: "bold")
-        #if (uservars.at("headingsmallcaps", default:false)) {
-            smallcaps(it.body)
-        } else {
-            upper(it.body)
-        }
-        #v(-0.75em) #line(length: 100%, stroke: 1pt + black) // draw a line
-    ]
-
-    // name title
-    show heading.where(
-        level: 1,
-    ): it => block(width: 100%)[
-        #set text(font: uservars.headingfont, size: 1.5em, weight: "bold")
-        #if (uservars.at("headingsmallcaps", default:false)) {
-            smallcaps(it.body)
-        } else {
-            upper(it.body)
-        }
-        #v(2pt)
-    ]
-
-    doc
-}
-
-
 #let cvinit(doc) = {
     set text(
         font: uservars.bodyfont,
@@ -75,7 +43,32 @@
         justify: true,
     )
 
-    doc = showrules(uservars, doc)
+    // section headings, e.g. "Professional Experience"
+    show heading.where(
+        level: 2,
+    ): it => block(width: 100%)[
+        #set align(left)
+        #set text(font: uservars.headingfont, size: 1em, weight: "bold")
+        #if (uservars.at("headingsmallcaps", default:false)) {
+            smallcaps(it.body)
+        } else {
+            upper(it.body)
+        }
+        #v(-0.75em) #line(length: 100%, stroke: 1pt + black) // draw a line
+    ]
+
+    // my name
+    show heading.where(
+        level: 1,
+    ): it => block(width: 100%)[
+        #set text(font: uservars.headingfont, size: 1.5em, weight: "bold")
+        #if (uservars.at("headingsmallcaps", default:false)) {
+            smallcaps(it.body)
+        } else {
+            upper(it.body)
+        }
+        #v(2pt)
+    ]
 
     set page(
         paper: "us-letter", // a4, us-letter
