@@ -2,6 +2,8 @@
 
 #let cvdata = yaml("resume.yaml")
 
+#show link: set text(blue)
+
 #let uservars = (
     headingfont: "Linux Libertine",
     bodyfont: "Linux Libertine",
@@ -16,6 +18,12 @@
       [ #box(link("mailto:" + info.personal.email)) \
       #box(link(info.personal.linkedin)[#info.personal.linkedin.split("//").at(1)]) \
       #box(link(info.personal.github)[#info.personal.github.split("//").at(1)])])
+}
+
+#let aux(content) = {
+    set text(fill: gray)
+
+    content
 }
 
 
@@ -85,9 +93,9 @@
         == Speaking
         #for speaking in info.speaking {
             let date = time.strpdate(speaking.date)
-            let title = if speaking.url != none [#link(speaking.url)[#speaking.title] ] else [ #speaking.title]
-            block(width: 100%, breakable: isbreakable)[
-                *#speaking.conference* #title #h(1fr) #date
+            let title = if speaking.url != none [#link(speaking.url)[#speaking.title]] else [#speaking.title]
+            block(width: 100%, breakable: isbreakable, spacing: 0.5em)[
+                *#speaking.conference*, "#title" #h(1fr) #aux[#date]
             ]
         }
     ]}
@@ -100,14 +108,15 @@
             let start = time.strpdate(w.startDate)
             let end = time.strpdate(w.endDate)
 
+            let org = if w.at("url", default: none) != none [
+                *#link(w.url)[#w.organization]*
+            ] else [
+                *#w.organization*
+            ]
+
             block(width: 100%, breakable: isbreakable)[
-                #if w.at("url", default: none) != none [
-                    *#link(w.url)[#w.organization]* #h(1fr) #w.location \
-                ] else [
-                    *#w.organization* #h(1fr) #w.location \
-                ]
-                #text(style: "italic")[#w.position] #h(1fr)
-                #start #sym.dash.en #end \
+                #org #h(1fr) #aux[#start #sym.dash.en #end] \
+                #text(style: "italic")[#w.position] #h(1fr) #aux[#w.location] \
                 #if w.at("concise", default: false) [] else [
                     // highlights or description
                     #for hi in w.highlights [
@@ -146,12 +155,13 @@
     if info.education != none {block[
         == Education
         #for edu in info.education {
-
-            // create a block layout for each education entry
             block(width: 100%, breakable: isbreakable)[
-                *#edu.institution* #text(style: "italic")[
+                *#edu.institution*
+                #text(style: "italic")[
                     #edu.degrees.map(it => [#it.type #it.area]).join(", ")
-                ] #h(1fr) #edu.startYear #sym.dash.en #edu.endYear \
+                ]
+                #h(1fr)
+                #aux[#edu.startYear #sym.dash.en #edu.endYear]
             ]
         }
     ]}
@@ -161,8 +171,9 @@
     place(
         bottom + right,
         block[
-            #set text(size: 5pt, fill: silver)
-            \*Last Updated: #datetime.today().display("[year]-[month]-[day]")
+            #set text(size: 10pt, fill: silver)
+            Last Updated: #datetime.today().display("[year]-[month]-[day]") \
+            Also available at: #link("https://jonathanj.in")[https://jonathanj.in]
         ]
     )
 }
