@@ -99,7 +99,7 @@
         == Work Experience
         #for w in info.work {
             let start = time.strpdate(w.startDate)
-            let end = time.strpdate(w.endDate)
+            let end = if w.at("endDate", default: none) != none [#time.strpdate(w.endDate)] else [Current]
 
             let org = if w.at("url", default: none) != none [
                 *#link(w.url)[#w.organization]*
