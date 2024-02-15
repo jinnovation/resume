@@ -1,3 +1,6 @@
+# yaml-language-server: $schema=./resume.yaml
+# Disable VSCode schema detection (mis-identifies this file as JSON Resume)
+
 personal:
   name: Jonathan Jin
   email: me@jonathanj.in
@@ -6,6 +9,11 @@ personal:
   github: https://github.com/jinnovation
 
 work:
+  - organization: Humane Intelligence
+    position: Engineering Advisor
+    startDate: 2024-02-01
+    location: New York, NY
+    concise: true
   - organization: Spotify
     position: Senior Machine Learning Engineer
     url: null
