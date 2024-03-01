@@ -1,4 +1,5 @@
 #import "time.typ"
+#import "data.typ": personal, skills
 
 #let cvdata = yaml("resume.yaml")
 
@@ -12,12 +13,12 @@
     headingsmallcaps: false
 )
 
-#let cvheading(info) = {
+#let cvheading(personal_info) = {
     table(columns: (1fr, auto), inset: 0pt, stroke: none,
-      heading(level: 1)[ #info.personal.name ],
-      [ #box(link("mailto:" + info.personal.email)) \
-      #box(link(info.personal.linkedin)[#info.personal.linkedin.split("//").at(1)]) \
-      #box(link(info.personal.github)[#info.personal.github.split("//").at(1)])])
+      heading(level: 1)[ #personal_info.name ],
+      [ #box(link("mailto:" + personal_info.email)) \
+      #box(link(personal_info.linkedin)[#personal_info.linkedin.split("//").at(1)]) \
+      #box(link(personal_info.github)[#personal_info.github.split("//").at(1)])])
 }
 
 #let aux(content) = {
@@ -121,6 +122,15 @@
     ]}
 }
 
+#let cv_skills(skills: skills) = {
+    [
+        == Skills
+        #for (group, items) in skills [
+            - *#group*: #items.join(", ")
+        ]
+    ]
+}
+
 
 #let cvskills(info, isbreakable: true) = {
     if (info.languages != none) or (info.skills != none) or (info.interests != none) {block(breakable: isbreakable)[
@@ -175,9 +185,10 @@
 
 #show: doc => cvinit(doc)
 
-#cvheading(cvdata)
+#cvheading(personal)
 #cvwork(cvdata)
 #cveducation(cvdata)
 #cvspeaking(cvdata)
-#cvskills(cvdata)
+// #cvskills(cvdata)
+#cv_skills()
 #endnote()
