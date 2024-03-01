@@ -189,6 +189,5 @@
 #cvwork(cvdata)
 #cveducation(cvdata)
 #cvspeaking(cvdata)
-// #cvskills(cvdata)
 #cv_skills()
 #endnote()
