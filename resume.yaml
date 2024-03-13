@@ -8,9 +8,9 @@ work:
     startDate: 2024-02-01
     location: New York, NY
     highlights:
-      - | 
+      - |
         Tech lead overseeing green-field development of platform for structured
-        red-teaming of large language models (LLMs)
+        evaluation of large language models (LLMs)
   - organization: Spotify
     position: Senior Machine Learning Engineer
     url: null
@@ -62,9 +62,9 @@ work:
     url: null
     highlights:
       - |
-          Member of Cortex, Twitter's central ML platform organization. Worked
-          on: workflow orchestration; experiment management/iteration; and
-          overall ML engineering productivity;
+        Member of Cortex, Twitter's central ML platform organization. Worked
+        on: workflow orchestration; experiment management/iteration; and
+        overall ML engineering productivity;
       - |
         Enabled distributed training of TensorFlow models in Apache Mesos from
         an Airflow pipeline via Deepbird, Twitter’s TensorFlow-based model
