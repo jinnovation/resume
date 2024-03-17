@@ -7,10 +7,7 @@ work:
     position: Engineering Advisor
     startDate: 2024-02-01
     location: New York, NY
-    highlights:
-      - |
-        Tech lead overseeing green-field development of platform for structured
-        evaluation of large language models (LLMs)
+    concise: true
   - organization: Spotify
     position: Senior Machine Learning Engineer
     url: null
