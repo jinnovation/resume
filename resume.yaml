@@ -2,6 +2,12 @@
 # Disable VSCode schema detection (mis-identifies this file as JSON Resume)
 
 work:
+  - organization: Hinge
+    url: https://hinge.co/
+    position: Staff Machine Learning Engineer
+    startDate: 2024-04-30
+    location: New York, NY
+    concise: true
   - organization: Humane Intelligence
     url: https://www.humane-intelligence.org/
     position: Engineering Advisor
