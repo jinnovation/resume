@@ -22,12 +22,6 @@ work:
         for defining the strategy and roadmap for experiment-tracking and
         artifact management within Hendrix;
       - |
-        Spearheaded development of Hendrix Registry as part of company-wide
-        AI/ML governance initiative; collaborated with stakeholders in Legal,
-        Trust & Safety, etc. to deliver a Backstage-based model card solution,
-        resulting in over 100 models registered by 40 teams company-wide in less
-        than a quarter;
-      - |
         Brought Hendrix's flagship Kubeflow-based orchestration product to
         general availability; defined multi-quarter engineering roadmap in
         collaboration with product and engineering stakeholders across ML
