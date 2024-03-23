@@ -17,6 +17,12 @@ work:
     highlights:
       - Worked on Hendrix, Spotify's centralized ML platform;
       - |
+        Contributed to technical evaluation of Ray for adoption into the Hendrix
+        platform; collaborated with the Ray maintainer team at Anyscale to
+        identify functionality gaps and steer Ray development roadmap, e.g. of
+        Ray AI Runtime; informed the development of Hendrix's initial
+        centralized multi-tenant Ray instructure based on KubeRay;
+      - |
         Spearheaded development of Hendrix Registry as part of company-wide
         AI/ML governance initiative; collaborated with stakeholders in Legal,
         Trust & Safety, etc. to deliver a Backstage-based model card solution,
