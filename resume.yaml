@@ -4,10 +4,12 @@
 work:
   - organization: Hinge
     url: https://hinge.co/
-    position: Staff Machine Learning Engineer
+    position: Staff Machine Learning Platform Engineer
     startDate: 2024-04-30
     location: New York, NY
-    concise: true
+    highlights:
+      - |
+        Leading the platformization of Hinge's disparate AI/ML efforts.
   - organization: Humane Intelligence
     url: https://www.humane-intelligence.org/
     position: Engineering Advisor
