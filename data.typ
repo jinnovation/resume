@@ -1,9 +1,10 @@
 #let personal = (
-  name: "Jonathan Jin",
-  email: "me@jonathanj.in",
-  url: "https://jonathanj.in",
-  linkedin: "https://linkedin.com/in/jinnovation",
-  github: "https://github.com/jinnovation",
+    name: "Jonathan Jin",
+    email: "me@jonathanj.in",
+    url: "https://jonathanj.in",
+    linkedin: "https://linkedin.com/in/jinnovation",
+    github: "https://github.com/jinnovation",
+    huggingface: "https://huggingface.co/jinnovation",
 )
 
 #let skills = (
