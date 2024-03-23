@@ -72,12 +72,14 @@ work:
     endDate: 2018-07-01
     concise: true
     location: New York, NY
+    hide: true
   - organization: OkCupid
     position: Software Engineer
     location: New York, NY
     concise: true
     startDate: 2015-07-01
     endDate: 2016-07-01
+    hide: true
 
 education:
   - institution: University of Chicago

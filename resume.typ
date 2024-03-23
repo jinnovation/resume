@@ -97,8 +97,12 @@
 
 #let cvwork(info, isbreakable: true) = {
     if info.work != none {block[
-        == Work Experience
+        == Select Work Experience
         #for w in info.work {
+            if w.at("hide", default: false) {
+                continue
+            }
+
             let start = time.strpdate(w.startDate)
             let end = if w.at("endDate", default: none) != none [#time.strpdate(w.endDate)] else [Current]
 
