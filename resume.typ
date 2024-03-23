@@ -49,7 +49,7 @@
         level: 2,
     ): it => block(width: 100%)[
         #set align(left)
-        #set text(font: uservars.headingfont, size: 1em, weight: "bold")
+        #set text(font: uservars.headingfont, size: 1.1em, weight: "bold")
         #if (uservars.at("headingsmallcaps", default:false)) {
             smallcaps(it.body)
         } else {
@@ -174,7 +174,7 @@
     place(
         bottom + right,
         block[
-            #set text(size: 10pt, fill: silver)
+            #set text(size: 8pt, fill: silver)
             Last Updated: #datetime.today().display("[year]-[month]-[day]") \
             Also available at: #link("https://jonathanj.in")[https://jonathanj.in]
         ]

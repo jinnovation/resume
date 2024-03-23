@@ -23,10 +23,11 @@ work:
     highlights:
       - Worked on Hendrix, Spotify's centralized ML platform;
       - |
-        Tech lead for Hendrix's experiment-tracking layer. Led team of four
-        engineers to deliver an MLflow-based MVP in half a quarter. Responsible
-        for defining the strategy and roadmap for experiment-tracking and
-        artifact management within Hendrix;
+        Contributed to technical evaluation of Ray for adoption into the Hendrix
+        platform; collaborated with the Ray maintainer team at Anyscale to
+        identify functionality gaps and steer Ray development roadmap, e.g. of
+        Ray AI Runtime; informed the development of Hendrix's initial
+        centralized multi-tenant Ray instructure based on KubeRay;
       - |
         Spearheaded development of Hendrix Registry as part of company-wide
         AI/ML governance initiative; collaborated with stakeholders in Legal,
@@ -41,10 +42,9 @@ work:
         50% and increase in measured user satisfaction of 10%;
       - |
         Active mentor and career coach to junior IC team members across the ML
-        Platform org; held bi-weekly one-on-ones to provide technical/career
-        mentorship and act as brainstorming partner. Successfully identified and
-        carved out long-term areas of ownership for two junior ICs that have
-        since become defining pillars of their respective careers.
+        Platform org. Successfully identified and carved out long-term areas of
+        ownership for two junior ICs that have since become defining pillars of
+        their respective careers.
   - organization: NVIDIA
     position: Senior Systems Software Engineer, AI Infrastructure
     location: New York, NY
