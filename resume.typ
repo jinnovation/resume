@@ -114,8 +114,13 @@
             ]
 
             block(width: 100%, breakable: isbreakable)[
-                #org #h(1fr) #aux[#start #sym.dash.en #end] \
-                #text(style: "italic")[#w.position] #h(1fr) #aux[#w.location] \
+                #text(fill: blue)[#org] #h(1fr) #aux[#start #sym.dash.en #end] \
+                *#w.position* #h(1fr) #aux[#w.location] \
+                #if w.at("blurb", default: "") != "" [
+                    #set text(style: "italic")
+                    #w.at("blurb")
+
+                ]
                 #if w.at("concise", default: false) [] else [
                     // highlights or description
                     #for hi in w.highlights [
