@@ -8,25 +8,25 @@
 )
 
 #let skills = (
-  "Programming Languages": (
-    "Python",
-    "Go",
-    "C++",
-    "Java",
-  ),
-  "Machine Learning and MLOps": ( 
-    "Ray",
-    "Kubeflow",
-    "Airflow",
-    "TensorFlow",
-    "TensorFlow Extended (TFX)",
-   ),
-  "Infrastructure and Distributed Systems": ( 
-    "Google Cloud (GCP)",
-    "Kubernetes",
-    "Terraform",
-    "Prometheus",
-    "gRPC",
-    "Docker",
-   )
+    "Programming Languages": (
+        "Python",
+        "Go",
+        "C++",
+        "Java",
+    ),
+    "Machine Learning and MLOps": (
+        "Ray",
+        "Kubeflow",
+        "Airflow",
+        "TensorFlow",
+        "TensorFlow Extended (TFX)",
+    ),
+    "Infrastructure and Distributed Systems": (
+        "Google Cloud (GCP)",
+        "Kubernetes",
+        "Terraform",
+        "Prometheus",
+        "gRPC",
+        "Docker",
+    )
 )
