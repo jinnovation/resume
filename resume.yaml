@@ -22,9 +22,9 @@ work:
     blurb: >-
       Senior member of the ML Platform organization; contributed to and
       maintained Hendrix, Spotify's centralized machine learning
-      platform. Primarily focused on compute orchestration and
-      infrastructure. Later shifted focus to AI/ML governance and artifact
-      management solutions.
+      platform. Primarily focused on managed multi-tenant compute infrastructure
+      for Kubeflow and Ray in GCP. Later shifted focus to AI/ML governance and
+      artifact/experiment management solutions.
     highlights:
       - >-
         Contributed to technical evaluation of Ray for adoption into the Hendrix
