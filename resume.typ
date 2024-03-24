@@ -5,13 +5,9 @@
 
 #show link: set text(blue)
 
-#let uservars = (
-    headingfont: "Linux Libertine",
-    bodyfont: "Linux Libertine",
-    fontsize: 10pt, // 10pt, 11pt, 12pt
-    linespacing: 6pt,
-    headingsmallcaps: false
-)
+#let heading_font = "Linux Libertine"
+#let body_font = "Linux Libertine"
+#let line_spacing = 6pt
 
 #let cvheading(personal_info) = {
     table(columns: (1fr, auto), inset: 0pt, stroke: none,
@@ -31,40 +27,38 @@
 
 #let cvinit(doc) = {
     set text(
-        font: uservars.bodyfont,
-        size: uservars.fontsize,
+        font: body_font,
+        size: 10pt,
         hyphenate: false,
     )
 
     set list(
-        spacing: uservars.linespacing
+        spacing: line_spacing,
     )
 
     set par(
-        leading: uservars.linespacing,
+        leading: line_spacing,
         justify: true,
     )
 
     // section headings, e.g. "Professional Experience"
     show heading.where(level: 2): it => block(width: 100%)[
         #set align(left)
-        #set text(font: uservars.headingfont, size: 1.1em, weight: "bold")
-        #if (uservars.at("headingsmallcaps", default:false)) {
-            smallcaps(it.body)
-        } else {
-            upper(it.body)
-        }
+        #set text(font: heading_font, size: 1.1em, weight: "bold")
+        #upper(it.body)
         #v(-0.75em) #line(length: 100%, stroke: 1pt + black) // draw a line
+    ]
+
+    // company names
+    show heading.where(level: 3): it => block(width: 100%)[
+        #set text(font: heading_font, size: 1.1em, weight: "bold", fill: blue)
+        #it
     ]
 
     // my name
     show heading.where(level: 1): it => block(width: 100%)[
-        #set text(font: uservars.headingfont, size: 1.5em, weight: "bold")
-        #if (uservars.at("headingsmallcaps", default:false)) {
-            smallcaps(it.body)
-        } else {
-            upper(it.body)
-        }
+        #set text(font: heading_font, size: 2.0em, weight: "bold")
+        #upper(it.body)
         #v(2pt)
     ]
 
@@ -118,8 +112,8 @@
             ]
 
             block(width: 100%, breakable: isbreakable)[
-                #text(fill: blue)[#org] #h(1fr) #aux[#start #sym.dash.en #end] \
-                *#w.position* #h(1fr) #aux[#w.location] \
+                === #org
+                *#w.position* #h(1fr) #aux[#w.location, #start #sym.dash.en #end] \
                 #if w.at("blurb", default: "") != "" [
                     #set text(style: "italic")
                     #w.at("blurb")
