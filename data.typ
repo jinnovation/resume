@@ -50,3 +50,25 @@
         )
     ),
 )
+
+#let speaking = (
+    (
+        title: "How Spotify is Navigating an Evolving ML Landscape with Hendrix Platform",
+        url: "https://twimlai.com/conf/twimlcon/2022/session/how-spotify-is-navigating-an-evolving-ml-landscape-with-hendrix-platform/",
+        conference: "TWIMLcon AI Platforms",
+        date: "2022-10-04",
+    ),
+
+    (
+        title: "Empowering Traceable and Auditable ML in Production at Spotify with Hendrix",
+        url: "https://mlconf.com/sessions/empowering-traceable-and-auditable-ml-in-production-at-spotify-with-hendrix",
+        conference: "MLconf",
+        date: "2022-03-28",
+    ),
+    (
+        conference: "KubeCon + CloudNativeCon",
+        url: "https://www.youtube.com/watch?v=KUyEuY5ZSqI",
+        title: "Scaling Kubeflow for Multi-tenancy at Spotify",
+        date: "2021-10-07",
+    ),
+)

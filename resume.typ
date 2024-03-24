@@ -1,5 +1,5 @@
 #import "time.typ"
-#import "data.typ": personal, skills, education
+#import "data.typ": personal, skills, education, speaking
 
 #let cvdata = yaml("resume.yaml")
 
@@ -73,18 +73,14 @@
 }
 
 
-#let cvspeaking(info, isbreakable: true) = {
-    if info.speaking == none {
-        return
-    }
-
+#let cvspeaking(speaking: speaking, isbreakable: true) = {
     block[
         == Speaking
-        #for speaking in info.speaking {
-            let date = time.strpdate(speaking.date)
-            let title = if speaking.url != none [#link(speaking.url)[#speaking.title]] else [#speaking.title]
+        #for speak in speaking {
+            let date = time.strpdate(speak.date)
+            let title = if speak.url != none [#link(speak.url)[#speak.title]] else [#speak.title]
             block(width: 100%, breakable: isbreakable, spacing: 0.5em)[
-                *#speaking.conference*, "#title" #h(1fr) #aux[#date]
+                *#speak.conference*, "#title" #h(1fr) #aux[#date]
             ]
         }
     ]
@@ -173,6 +169,6 @@
 #cvheading(personal)
 #cvwork(cvdata)
 #cveducation()
-#cvspeaking(cvdata)
+#cvspeaking()
 #cv_skills()
 #endnote()
