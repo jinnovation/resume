@@ -20,7 +20,7 @@ work:
       execute on engineering strategies, including hiring and vendor
       selection. Contribute in hands-on capacity for technical
       proofs-of-concepts.
-    highlights: []
+    concise: true
   - organization: Spotify
     position: Senior Machine Learning Engineer
     url: null
@@ -30,9 +30,9 @@ work:
     blurb: >-
       Senior member of the ML Platform organization; contributed to and
       maintained Hendrix, Spotify's centralized machine learning
-      platform. Primarily focused on compute orchestration and
-      infrastructure. Later shifted focus to AI/ML governance and artifact
-      management solutions.
+      platform. Primarily focused on managed multi-tenant compute infrastructure
+      for Kubeflow and Ray in GCP. Later shifted focus to AI/ML governance and
+      artifact/experiment management solutions.
     highlights:
       - >-
         Contributed to technical evaluation of Ray for adoption into the Hendrix
@@ -66,10 +66,13 @@ work:
     blurb: >-
       Worked on AI infrastructure for autonomous vehicle research and development.
     highlights:
-      - Implemented prototype for "hybrid data/model parallelism" using a Ray
-        and Horovod;
-      - Implemented a custom Kubernetes scheduler for preemptible workloads in
-        an on-prem GPU cluster
+      - >-
+        Implemented prototype for horizontally-scalable model-parallel training
+        for multi-task learning using parameter server approach based on Ray and
+        Horovod;
+      - >-
+        Implemented a custom Kubernetes scheduler for preemptible workloads and
+        resource reservations in an on-prem GPU cluster
 
   - organization: Twitter
     position: Machine Learning Software Engineer
