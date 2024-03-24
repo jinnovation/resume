@@ -115,29 +115,3 @@ speaking:
     url: https://www.youtube.com/watch?v=KUyEuY5ZSqI
     title: Scaling Kubeflow for Multi-tenancy at Spotify
     date: 2021-10-07
-
-skills:
-  - category: Programming Languages
-    skills:
-      - Python
-      - Go
-      - C++
-      - Java
-  - category: Machine Learning and MLOps
-    skills:
-      - Ray
-      - Kubeflow
-      - Airflow
-      - TensorFlow
-      - TensorFlow Extended (TFX)
-  - category: Infrastructure and Distributed Systems
-    skills:
-      - Google Cloud (GCP)
-      - Kubernetes
-      - Terraform
-      - Prometheus
-      - gRPC
-      - Docker
-
-languages: null
-interests: null
