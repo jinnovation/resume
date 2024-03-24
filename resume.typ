@@ -16,9 +16,10 @@
 #let cvheading(personal_info) = {
     table(columns: (1fr, auto), inset: 0pt, stroke: none,
       heading(level: 1)[ #personal_info.name ],
-      [ #box(link("mailto:" + personal_info.email)) \
-      #box(link(personal_info.linkedin)[#personal_info.linkedin.split("//").at(1)]) \
-      #box(link(personal_info.github)[#personal_info.github.split("//").at(1)])])
+        [ #link("mailto:" + personal_info.email) \
+            #link(personal_info.linkedin)[#personal_info.linkedin.split("//").at(1)] \
+            #link(personal_info.github)[#personal_info.github.split("//").at(1)] \
+            #link(personal_info.huggingface)[#personal_info.huggingface.split("//").at(1)]])
 }
 
 #let aux(content) = {
@@ -97,8 +98,12 @@
 
 #let cvwork(info, isbreakable: true) = {
     if info.work != none {block[
-        == Work Experience
+        == Select Work Experience
         #for w in info.work {
+            if w.at("hide", default: false) {
+                continue
+            }
+
             let start = time.strpdate(w.startDate)
             let end = if w.at("endDate", default: none) != none [#time.strpdate(w.endDate)] else [Current]
 
@@ -109,8 +114,13 @@
             ]
 
             block(width: 100%, breakable: isbreakable)[
-                #org #h(1fr) #aux[#start #sym.dash.en #end] \
-                #text(style: "italic")[#w.position] #h(1fr) #aux[#w.location] \
+                #text(fill: blue)[#org] #h(1fr) #aux[#start #sym.dash.en #end] \
+                *#w.position* #h(1fr) #aux[#w.location] \
+                #if w.at("blurb", default: "") != "" [
+                    #set text(style: "italic")
+                    #w.at("blurb")
+
+                ]
                 #if w.at("concise", default: false) [] else [
                     // highlights or description
                     #for hi in w.highlights [
