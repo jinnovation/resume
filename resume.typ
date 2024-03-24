@@ -46,9 +46,7 @@
     )
 
     // section headings, e.g. "Professional Experience"
-    show heading.where(
-        level: 2,
-    ): it => block(width: 100%)[
+    show heading.where(level: 2): it => block(width: 100%)[
         #set align(left)
         #set text(font: uservars.headingfont, size: 1.1em, weight: "bold")
         #if (uservars.at("headingsmallcaps", default:false)) {
@@ -60,9 +58,7 @@
     ]
 
     // my name
-    show heading.where(
-        level: 1,
-    ): it => block(width: 100%)[
+    show heading.where(level: 1): it => block(width: 100%)[
         #set text(font: uservars.headingfont, size: 1.5em, weight: "bold")
         #if (uservars.at("headingsmallcaps", default:false)) {
             smallcaps(it.body)
@@ -84,7 +80,11 @@
 
 
 #let cvspeaking(info, isbreakable: true) = {
-    if info.speaking != none {block[
+    if info.speaking == none {
+        return
+    }
+
+    block[
         == Speaking
         #for speaking in info.speaking {
             let date = time.strpdate(speaking.date)
@@ -93,11 +93,15 @@
                 *#speaking.conference*, "#title" #h(1fr) #aux[#date]
             ]
         }
-    ]}
+    ]
 }
 
 #let cvwork(info, isbreakable: true) = {
-    if info.work != none {block[
+    if info.work == none {
+        return
+    }
+
+    block[
         == Select Work Experience
         #for w in info.work {
             if w.at("hide", default: false) {
@@ -129,7 +133,7 @@
                 ]
             ]
         }
-    ]}
+    ]
 }
 
 #let cv_skills(skills: skills) = {
@@ -143,29 +147,36 @@
 
 
 #let cvskills(info, isbreakable: true) = {
-    if (info.languages != none) or (info.skills != none) or (info.interests != none) {block(breakable: isbreakable)[
-        == Skills
-        #if (info.languages != none) [
-            #let langs = ()
-            #for lang in info.languages {
-                langs.push([#lang.language (#lang.fluency)])
-            }
-            - *Languages*: #langs.join(", ")
-        ]
-        #if (info.skills != none) [
-            #for group in info.skills [
-                - *#group.category*: #group.skills.join(", ")
+    if (info.languages != none) or (info.skills != none) or (info.interests !=
+    none) {
+        block(breakable: isbreakable)[
+            == Skills
+            #if (info.languages != none) [
+                #let langs = ()
+                #for lang in info.languages {
+                    langs.push([#lang.language (#lang.fluency)])
+                }
+                - *Languages*: #langs.join(", ")
+            ]
+            #if (info.skills != none) [
+                #for group in info.skills [
+                    - *#group.category*: #group.skills.join(", ")
+                ]
+            ]
+            #if (info.interests != none) [
+                - *Interests*: #info.interests.join(", ")
             ]
         ]
-        #if (info.interests != none) [
-            - *Interests*: #info.interests.join(", ")
-        ]
-    ]}
+    }
 }
 
 
 #let cveducation(info, isbreakable: true) = {
-    if info.education != none {block[
+    if info.education == none {
+        return
+    }
+
+    block[
         == Education
         #for edu in info.education {
             block(width: 100%, breakable: isbreakable)[
@@ -177,7 +188,7 @@
                 #aux[#edu.startYear #sym.dash.en #edu.endYear]
             ]
         }
-    ]}
+    ]
 }
 
 #let endnote() = {
