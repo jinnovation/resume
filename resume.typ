@@ -1,7 +1,5 @@
 #import "time.typ"
-#import "data.typ": personal, skills, education, speaking
-
-#let cvdata = yaml("resume.yaml")
+#import "data.typ": personal, skills, education, speaking, work
 
 #show link: set text(blue)
 
@@ -86,14 +84,10 @@
     ]
 }
 
-#let cvwork(info, isbreakable: true) = {
-    if info.work == none {
-        return
-    }
-
+#let cvwork(work: work, isbreakable: true) = {
     block[
         == Select Work Experience
-        #for w in info.work {
+        #for w in work {
             if w.at("hide", default: false) {
                 continue
             }
@@ -118,7 +112,7 @@
                 #if w.at("concise", default: false) [] else [
                     // highlights or description
                     #for hi in w.highlights [
-                        - #eval(hi, mode: "markup")
+                        - #hi
                     ]
                 ]
             ]
@@ -167,7 +161,7 @@
 #show: doc => cvinit(doc)
 
 #cvheading(personal)
-#cvwork(cvdata)
+#cvwork()
 #cveducation()
 #cvspeaking()
 #cv_skills()

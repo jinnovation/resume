@@ -72,3 +72,116 @@
         date: "2021-10-07",
     ),
 )
+
+#let work = (
+    (
+        organization: "Humane Intelligence",
+        url: "https://www.humane-intelligence.org/",
+        position: "Engineering Advisor",
+        startDate: "2024-02-01",
+        location: "New York, NY",
+        blurb: [
+            "Fractional" tech lead and architect. Partner with the CEO to define
+            and execute on engineering strategies, including hiring and vendor
+            selection. Contribute in hands-on capacity for technical
+            proofs-of-concepts.
+        ],
+        concise: true,
+    ),
+    (
+
+        organization: "Spotify",
+        position: "Senior Machine Learning Engineer",
+        url: none,
+        location: "New York, NY",
+        startDate: "2021-03-01",
+        endDate: "2024-03-04",
+        blurb: [
+            Senior member of the ML Platform organization; contributed to and
+            maintained Hendrix, Spotify's centralized machine learning
+            platform. Primarily focused on managed multi-tenant compute
+            infrastructure for Kubeflow and Ray in GCP. Later shifted focus to
+            AI/ML governance and artifact/experiment management solutions.
+        ],
+        highlights: (
+            [
+                Evaluated Ray for adoption into the Hendrix platform in
+                collaboration with the maintainer team at Anyscale; informed the
+                development of Hendrix's initial centralized multi-tenant Ray
+                instructure based on KubeRay;
+            ],
+            [
+                Spearheaded development of Backstage-based model card solution
+                in collaboration with non-technical stakeholders (Legal and
+                Trust & Safety) in preparation for the EU Digital Services Act;
+            ],
+            [
+                Brought Hendrix's flagship Kubeflow-based orchestration product
+                to general availability; defined multi-quarter engineering
+                roadmap in collaboration with product and engineering
+                stakeholders spanning infrastructural (SLOs, observability) and
+                user-facing (documentation, API cleanliness) needs.
+            ],
+        ),
+    ),
+    (
+        organization: "NVIDIA",
+        position: "Senior Systems Software Engineer, AI Infrastructure",
+        location: "New York, NY",
+        startDate: "2019-12-01",
+        endDate: "2021-01-01",
+        url: none,
+        blurb: [
+            Worked on AI infrastructure for autonomous vehicle research and development.
+],
+        highlights: (
+            [
+                Implemented prototype for horizontally-scalable model-parallel
+                training for multi-task learning using parameter server approach
+                based on Ray and Horovod;
+            ],
+            [
+                Implement custom Kubernetes scheduler for preemptible workloads
+                and resource reservations in an on-prem GPU cluster.
+            ],
+        ),
+),
+    (
+        organization: "Twitter",
+        position: "Machine Learning Software Engineer",
+        startDate: "2018-08-01",
+        endDate: "2019-12-01",
+        url: none,
+        location: "New York, NY",
+        blurb: [
+            Member of Cortex, Twitter's central ML platform organization. Worked
+            on: workflow orchestration; experiment management/iteration; and
+            overall ML engineering productivity.
+        ],
+        highlights: (
+            [
+                Enabled distributed training of TensorFlow models in Apache
+                Mesos from an Airflow pipeline via Deepbird, Twitter's
+                TensorFlow-based model training/evaluating/serving framework
+            ],
+        ),
+    ),
+    (
+        organization: "Uber",
+        position: "Software Engineer, Observability",
+        startDate: "2016-07-01",
+        endDate: "2018-07-01",
+        concise: true,
+        location: "New York, NY",
+        hide: true,
+    ),
+    (
+        organization: "OkCupid",
+        position: "Software Engineer",
+        location: "New York, NY",
+        concise: true,
+        startDate: "2015-07-01",
+        endDate: "2016-07-01",
+        hide: true,
+    )
+)
