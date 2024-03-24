@@ -19,7 +19,6 @@
         "Kubeflow",
         "Airflow",
         "TensorFlow",
-        "TensorFlow Extended (TFX)",
     ),
     "Infrastructure and Distributed Systems": (
         "Google Cloud (GCP)",
