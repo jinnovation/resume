@@ -29,3 +29,24 @@
         "Docker",
     )
 )
+
+#let education = (
+    (
+        institution: "University of Chicago",
+        url: "https://uchicago.edu",
+        area: "Computer Science",
+        startYear: 2011,
+        endYear: 2015,
+        location: "Chicago, IL",
+        degrees: (
+            (
+                type: "B.S.",
+                area: "Computer Science",
+            ),
+            (
+                type: "B.A",
+                area: "Economics",
+            )
+        )
+    ),
+)

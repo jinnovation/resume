@@ -1,5 +1,5 @@
 #import "time.typ"
-#import "data.typ": personal, skills
+#import "data.typ": personal, skills, education
 
 #let cvdata = yaml("resume.yaml")
 
@@ -139,14 +139,10 @@
     ]
 }
 
-#let cveducation(info, isbreakable: true) = {
-    if info.education == none {
-        return
-    }
-
+#let cveducation(education: education, isbreakable: true) = {
     block[
         == Education
-        #for edu in info.education {
+        #for edu in education {
             block(width: 100%, breakable: isbreakable)[
                 *#edu.institution*
                 #text(style: "italic")[
@@ -176,7 +172,7 @@
 
 #cvheading(personal)
 #cvwork(cvdata)
-#cveducation(cvdata)
+#cveducation()
 #cvspeaking(cvdata)
 #cv_skills()
 #endnote()

@@ -89,19 +89,6 @@ work:
     endDate: 2016-07-01
     hide: true
 
-education:
-  - institution: University of Chicago
-    url: https://uchicago.edu
-    area: Computer Science
-    degrees:
-      - type: B.S.
-        area: Computer Science
-      - type: B.A.
-        area: Economics
-    startYear: 2011
-    endYear: 2015
-    location: Chicago, IL
-
 speaking:
   - title: How Spotify is Navigating an Evolving ML Landscape with Hendrix Platform
     url: https://twimlai.com/conf/twimlcon/2022/session/how-spotify-is-navigating-an-evolving-ml-landscape-with-hendrix-platform/
