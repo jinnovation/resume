@@ -15,10 +15,10 @@
         "Java",
     ),
     "Machine Learning and MLOps": (
-        "Ray",
-        "Kubeflow",
-        "Airflow",
-        "TensorFlow",
+        link("https://ray.io")[Ray],
+        link("https://www.kubeflow.org/")[Kubeflow],
+        link("https://airflow.apache.org/")[Airflow],
+        link("https://www.tensorflow.org/")[TensorFlow],
     ),
     "Infrastructure and Distributed Systems": (
         "Google Cloud (GCP)",
