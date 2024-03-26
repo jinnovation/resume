@@ -72,7 +72,7 @@
 
 
 #let cvspeaking(speaking: speaking, isbreakable: true) = {
-    block[
+    block(below: 2.0em)[
         == Speaking
         #for speak in speaking {
             let date = time.strpdate(speak.date)
@@ -85,7 +85,7 @@
 }
 
 #let cvwork(work: work, isbreakable: true) = {
-    block[
+    block(below: 2.0em)[
         == Select Work Experience
         #for w in work {
             if w.at("hide", default: false) {
@@ -130,7 +130,7 @@
 }
 
 #let cveducation(education: education, isbreakable: true) = {
-    block[
+    block(below: 2.0em)[
         == Education
         #for edu in education {
             block(width: 100%, breakable: isbreakable)[
