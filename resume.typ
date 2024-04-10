@@ -104,13 +104,11 @@
             block(width: 100%, breakable: isbreakable)[
                 === #org
                 *#w.position* #h(1fr) #aux[#w.location, #start #sym.dash.en #end] \
-                #if w.at("blurb", default: "") != "" [
+                #if w.keys().contains("blurb") [
                     #set text(style: "italic")
-                    #w.at("blurb")
-
+                    #w.blurb
                 ]
-                #if w.at("concise", default: false) [] else [
-                    // highlights or description
+                #if w.keys().contains("highlights") [
                     #for hi in w.highlights [
                         - #hi
                     ]
@@ -150,7 +148,7 @@
         bottom + right,
         block[
             #set text(size: 8pt, fill: silver)
-            Last Updated: #datetime.today().display("[year]-[month]-[day]") \
+            Last Updated: #datetime.today().display("[year]-[month]-[day]").
             Also available at: #link("https://jonathanj.in")[https://jonathanj.in]
         ]
     )
