@@ -1,7 +1,5 @@
 #import "time.typ"
-#import "data.typ": personal, skills
-
-#let cvdata = yaml("resume.yaml")
+#import "data.typ": personal, skills, education, speaking, work
 
 #show link: set text(blue)
 
@@ -73,31 +71,23 @@
 }
 
 
-#let cvspeaking(info, isbreakable: true) = {
-    if info.speaking == none {
-        return
-    }
-
-    block[
+#let cvspeaking(speaking: speaking, isbreakable: true) = {
+    block(below: 2.0em)[
         == Speaking
-        #for speaking in info.speaking {
-            let date = time.strpdate(speaking.date)
-            let title = if speaking.url != none [#link(speaking.url)[#speaking.title]] else [#speaking.title]
+        #for speak in speaking {
+            let date = time.strpdate(speak.date)
+            let title = if speak.url != none [#link(speak.url)[#speak.title]] else [#speak.title]
             block(width: 100%, breakable: isbreakable, spacing: 0.5em)[
-                *#speaking.conference*, "#title" #h(1fr) #aux[#date]
+                *#speak.conference*, "#title" #h(1fr) #aux[#date]
             ]
         }
     ]
 }
 
-#let cvwork(info, isbreakable: true) = {
-    if info.work == none {
-        return
-    }
-
-    block[
+#let cvwork(work: work, isbreakable: true) = {
+    block(below: 2.0em)[
         == Select Work Experience
-        #for w in info.work {
+        #for w in work {
             if w.at("hide", default: false) {
                 continue
             }
@@ -122,7 +112,7 @@
                 #if w.at("concise", default: false) [] else [
                     // highlights or description
                     #for hi in w.highlights [
-                        - #eval(hi, mode: "markup")
+                        - #hi
                     ]
                 ]
             ]
@@ -139,14 +129,10 @@
     ]
 }
 
-#let cveducation(info, isbreakable: true) = {
-    if info.education == none {
-        return
-    }
-
-    block[
+#let cveducation(education: education, isbreakable: true) = {
+    block(below: 2.0em)[
         == Education
-        #for edu in info.education {
+        #for edu in education {
             block(width: 100%, breakable: isbreakable)[
                 *#edu.institution*
                 #text(style: "italic")[
@@ -175,8 +161,8 @@
 #show: doc => cvinit(doc)
 
 #cvheading(personal)
-#cvwork(cvdata)
-#cveducation(cvdata)
-#cvspeaking(cvdata)
+#cvwork()
+#cveducation()
+#cvspeaking()
 #cv_skills()
 #endnote()
