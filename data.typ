@@ -75,6 +75,16 @@
 
 #let work = (
     (
+        organization: "Hinge",
+        url: "https://hinge.co",
+        position: "Staff Machine Learning Platform Engineer",
+        startDate: "2024-04-15",
+        location: "New York, NY",
+        blurb: [
+            Leading the platformization of Hinge's disparate AI/ML efforts.
+        ],
+    ),
+    (
         organization: "Humane Intelligence",
         url: "https://www.humane-intelligence.org/",
         position: "Engineering Advisor",
@@ -86,7 +96,6 @@
             selection. Contribute in hands-on capacity for technical
             proofs-of-concepts.
         ],
-        concise: true,
     ),
     (
 
@@ -171,7 +180,6 @@
         position: "Software Engineer, Observability",
         startDate: "2016-07-01",
         endDate: "2018-07-01",
-        concise: true,
         location: "New York, NY",
         hide: true,
     ),
@@ -179,7 +187,6 @@
         organization: "OkCupid",
         position: "Software Engineer",
         location: "New York, NY",
-        concise: true,
         startDate: "2015-07-01",
         endDate: "2016-07-01",
         hide: true,
