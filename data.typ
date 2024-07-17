@@ -8,25 +8,30 @@
 )
 
 #let skills = (
-    "Programming Languages": (
-        "Python",
-        "Go",
-        "C++",
-        "Java",
-    ),
-    "Machine Learning and MLOps": (
+    "Machine Learning and Data": (
         link("https://ray.io")[Ray],
-        link("https://www.kubeflow.org/")[Kubeflow],
-        link("https://airflow.apache.org/")[Airflow],
-        link("https://www.tensorflow.org/")[TensorFlow],
+        link("https://pytorch.org")[PyTorch],
+        link("https://databricks.com")[Databricks],
+        link("https://spark.apache.org")[Apache Spark],
+        link("https://mlflow.org")[MLflow],
+        link("https://airflow.apache.org")[Apache Airflow],
+        link("https://www.kubeflow.org")[Kubeflow],
+        link("https://www.tensorflow.org")[TensorFlow],
     ),
     "Infrastructure and Distributed Systems": (
+        "Amazon Web Services (AWS)",
         "Google Cloud (GCP)",
         "Kubernetes",
         "Terraform",
         "Prometheus",
         "gRPC",
         "Docker",
+    ),
+    "Programming Languages": (
+        "Python",
+        "Go",
+        "C++",
+        "Java",
     )
 )
 
