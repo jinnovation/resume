@@ -127,9 +127,10 @@
                 instructure based on KubeRay;
             ],
             [
-                Spearheaded development of Backstage-based model card solution
-                in collaboration with non-technical stakeholders (Legal and
-                Trust & Safety) in preparation for the EU Digital Services Act;
+                Spearheaded development of Backstage-based model governance
+                solution in collaboration with non-technical stakeholders (Legal
+                and Trust & Safety) in preparation for the EU Digital Services
+                Act;
             ],
             [
                 Brought Hendrix's flagship Kubeflow-based orchestration product
