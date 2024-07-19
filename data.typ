@@ -11,7 +11,6 @@
     "Machine Learning and Data": (
         link("https://ray.io")[Ray],
         link("https://pytorch.org")[PyTorch],
-        link("https://databricks.com")[Databricks],
         link("https://spark.apache.org")[Apache Spark],
         link("https://mlflow.org")[MLflow],
         link("https://airflow.apache.org")[Apache Airflow],
@@ -19,13 +18,16 @@
         link("https://www.tensorflow.org")[TensorFlow],
     ),
     "Infrastructure and Distributed Systems": (
-        "Amazon Web Services (AWS)",
-        "Google Cloud (GCP)",
         "Kubernetes",
         "Terraform",
         "Prometheus",
         "gRPC",
         "Docker",
+    ),
+    "Enterprise Platforms": (
+        "Amazon Web Services (AWS)",
+        "Google Cloud (GCP)",
+        link("https://databricks.com")[Databricks],
     ),
     "Programming Languages": (
         "Python",
@@ -82,7 +84,7 @@
     (
         organization: "Hinge",
         url: "https://hinge.co",
-        position: "Staff Machine Learning Platform Engineer",
+        position: "Staff Machine Learning Engineer, AI Platform",
         startDate: "2024-04-15",
         location: "New York, NY",
         blurb: [
