@@ -12,6 +12,7 @@
         link("https://ray.io")[Ray],
         link("https://pytorch.org")[PyTorch],
         link("https://spark.apache.org")[Apache Spark],
+        link("https://flink.apache.org/")[Apache Flink],
         link("https://mlflow.org")[MLflow],
         link("https://airflow.apache.org")[Apache Airflow],
         link("https://www.kubeflow.org")[Kubeflow],
