@@ -99,9 +99,12 @@
         ],
         highlights: (
             [
-                Re-architected photo-scoring pipeline to reduce backfill time
-                from order of weeks to order of days using Databricks Delta Live Tables, Spark,
-                Flink, and Ray Serve;
+                Re-architected
+                #link("https://hingeapp.zendesk.com/hc/en-us/articles/26558052212627-What-is-Top-Photo")[Top
+                Photo] scoring pipeline to enable sub-hour reactive photo score
+                updates and highly performant (~hours) backfilling of photo
+                scores for new model versions, reducing time-to-production for
+                new photo-scoring models from months to days;
             ],
             [
                 Defined the technical direction of Hinge's model serving
