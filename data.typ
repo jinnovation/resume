@@ -61,6 +61,12 @@
 
 #let speaking = (
     (
+        title: "Accelerating Time-to-Production for ML at Hinge",
+        url: "https://raysummit.anyscale.com/flow/anyscale/raysummit2024/landing/page/eventsite",
+        conference: "Ray Summit",
+        date: "2024-09-30",
+    ),
+    (
         title: "How Spotify is Navigating an Evolving ML Landscape with Hendrix Platform",
         url: "https://twimlai.com/conf/twimlcon/2022/session/how-spotify-is-navigating-an-evolving-ml-landscape-with-hendrix-platform/",
         conference: "TWIMLcon AI Platforms",
@@ -91,13 +97,28 @@
         blurb: [
             Leading the platformization of Hinge's disparate AI/ML efforts.
         ],
+        highlights: (
+            [
+                Re-architected photo-scoring pipeline to reduce backfill time
+                from order of weeks to order of days using Databricks Delta Live Tables, Spark,
+                Flink, and Ray Serve;
+            ],
+            [
+                Defined the technical direction of Hinge's model serving
+                strategy. Conducted in-depth and methodical evaluation of two
+                solutions (Ray Serve and
+                #link("https://www.databricks.com/product/model-serving")[Databricks Model Serving])
+            ],
+        )
     ),
     (
         organization: "Humane Intelligence",
         url: "https://www.humane-intelligence.org/",
         position: "Engineering Advisor",
         startDate: "2024-02-01",
+        endDate: "2024-08-30",
         location: "New York, NY",
+        hide: true,
         blurb: [
             "Fractional" tech lead and architect. Partner with the CEO to define
             and execute on engineering strategies, including hiring and vendor
