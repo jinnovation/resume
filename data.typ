@@ -8,25 +8,33 @@
 )
 
 #let skills = (
-    "Programming Languages": (
-        "Python",
-        "Go",
-        "C++",
-        "Java",
-    ),
-    "Machine Learning and MLOps": (
+    "Machine Learning and Data": (
         link("https://ray.io")[Ray],
-        link("https://www.kubeflow.org/")[Kubeflow],
-        link("https://airflow.apache.org/")[Airflow],
-        link("https://www.tensorflow.org/")[TensorFlow],
+        link("https://pytorch.org")[PyTorch],
+        link("https://spark.apache.org")[Apache Spark],
+        link("https://flink.apache.org/")[Apache Flink],
+        link("https://mlflow.org")[MLflow],
+        link("https://airflow.apache.org")[Apache Airflow],
+        link("https://www.kubeflow.org")[Kubeflow],
+        link("https://www.tensorflow.org")[TensorFlow],
     ),
     "Infrastructure and Distributed Systems": (
-        "Google Cloud (GCP)",
         "Kubernetes",
         "Terraform",
         "Prometheus",
         "gRPC",
         "Docker",
+    ),
+    "Enterprise Platforms": (
+        "Amazon Web Services (AWS)",
+        "Google Cloud (GCP)",
+        link("https://databricks.com")[Databricks],
+    ),
+    "Programming Languages": (
+        "Python",
+        "Go",
+        "C++",
+        "Java",
     )
 )
 
@@ -77,7 +85,7 @@
     (
         organization: "Hinge",
         url: "https://hinge.co",
-        position: "Staff Machine Learning Platform Engineer",
+        position: "Staff Machine Learning Engineer, AI Platform",
         startDate: "2024-04-15",
         location: "New York, NY",
         blurb: [
@@ -120,9 +128,10 @@
                 instructure based on KubeRay;
             ],
             [
-                Spearheaded development of Backstage-based model card solution
-                in collaboration with non-technical stakeholders (Legal and
-                Trust & Safety) in preparation for the EU Digital Services Act;
+                Spearheaded development of Backstage-based model governance
+                solution in collaboration with non-technical stakeholders (Legal
+                and Trust & Safety) in preparation for the EU Digital Services
+                Act;
             ],
             [
                 Brought Hendrix's flagship Kubeflow-based orchestration product
