@@ -102,15 +102,16 @@
                 Re-architected
                 #link("https://hingeapp.zendesk.com/hc/en-us/articles/26558052212627-What-is-Top-Photo")[Top
                 Photo] scoring pipeline to enable sub-hour reactive photo score
-                updates and highly performant (\~hours) backfilling of photo
-                scores for new model versions, reducing time-to-production for
-                new photo-scoring models from months to days;
+                updates and performant (\~hours) backfills for new model
+                outputs, reducing time-to-production for new photo-scoring
+                models from months to days;
             ],
             [
                 Defined the technical direction of Hinge's model serving
                 strategy. Conducted in-depth and methodical evaluation of two
                 solutions (Ray Serve and
-                #link("https://www.databricks.com/product/model-serving")[Databricks Model Serving])
+                #link("https://www.databricks.com/product/model-serving")[Databricks
+                Model Serving]) and defined multi-quarter development roadmap.
             ],
         )
     ),
