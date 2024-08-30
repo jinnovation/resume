@@ -102,7 +102,7 @@
                 Re-architected
                 #link("https://hingeapp.zendesk.com/hc/en-us/articles/26558052212627-What-is-Top-Photo")[Top
                 Photo] scoring pipeline to enable sub-hour reactive photo score
-                updates and highly performant (~hours) backfilling of photo
+                updates and highly performant (\~hours) backfilling of photo
                 scores for new model versions, reducing time-to-production for
                 new photo-scoring models from months to days;
             ],
@@ -121,7 +121,6 @@
         startDate: "2024-02-01",
         endDate: "2024-08-30",
         location: "New York, NY",
-        hide: true,
         blurb: [
             "Fractional" tech lead and architect. Partner with the CEO to define
             and execute on engineering strategies, including hiring and vendor
@@ -143,7 +142,7 @@
                 over 100
                 "#link("https://www.humane-intelligence.org/bounty1")[bias
                 bounty]" participants to contribute over 30 submissions via
-                Hugging Face API;
+                Hugging Face API.
             ],
         ),
     ),
@@ -163,23 +162,17 @@
         ],
         highlights: (
             [
-                Evaluated Ray for adoption into the Hendrix platform in
-                collaboration with the maintainer team at Anyscale; informed the
-                development of Hendrix's initial centralized multi-tenant Ray
-                instructure based on KubeRay;
+                Drove early-stage evaluation and implementation of centralized,
+                multi-tenant Ray infrastructure based on KubeRay;
             ],
             [
                 Spearheaded development of Backstage-based model governance
-                solution in collaboration with non-technical stakeholders (Legal
-                and Trust & Safety) in preparation for the EU Digital Services
-                Act;
+                solution in preparation for the EU Digital Services Act;
             ],
             [
-                Brought Hendrix's flagship Kubeflow-based orchestration product
-                to general availability; defined multi-quarter engineering
-                roadmap in collaboration with product and engineering
-                stakeholders spanning infrastructural (SLOs, observability) and
-                user-facing (documentation, API cleanliness) needs.
+                Defined and drove general-availability roadmap for
+                Kubeflow-based orchestration product; defined SLOs and educated
+                ML Platform org on SRE best practices.
             ],
         ),
     ),
@@ -192,17 +185,7 @@
         url: none,
         blurb: [
             Worked on AI infrastructure for autonomous vehicle research and development.
-],
-        highlights: (
-            [
-                Drove development of prototype horizontally-scalable model-parallel
-                training for multi-task learning using Ray and Horovod;
-            ],
-            [
-                Implemented custom Kubernetes scheduler for preemptible workloads
-                and resource reservations in an on-prem GPU cluster.
-            ],
-        ),
+        ],
 ),
     (
         organization: "Twitter",
@@ -213,8 +196,7 @@
         location: "New York, NY",
         blurb: [
             Member of Cortex, Twitter's central ML platform organization. Worked
-            on: workflow orchestration; experiment management/iteration; and
-            overall ML engineering productivity.
+            on: workflow orchestration; experiment management.
         ],
         // highlights: (
         //     [
