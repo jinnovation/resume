@@ -128,6 +128,24 @@
             selection. Contribute in hands-on capacity for technical
             proofs-of-concepts.
         ],
+        highlights: (
+            [
+                Led the hiring and management of a team of engineering
+                contractors and an external development agency; defined,
+                communicated, and coordinated development roadmap, led platform
+                evaluations, and defined technical ways-of-working for a
+                brand-new team;
+            ],
+            [
+                Spearheaded 0-to-1 development of platform for collaborative,
+                crowd-sourced auditing of large language models (open-source and
+                vendor) using Vercel, Next.js, and the Hugging Face API; enabled
+                over 100
+                "#link("https://www.humane-intelligence.org/bounty1")[bias
+                bounty]" participants to contribute over 30 submissions via
+                Hugging Face API;
+            ],
+        ),
     ),
     (
 
@@ -138,11 +156,10 @@
         startDate: "2021-03-01",
         endDate: "2024-03-04",
         blurb: [
-            Senior member of the ML Platform organization; contributed to and
-            maintained Hendrix, Spotify's centralized machine learning
-            platform. Primarily focused on managed multi-tenant compute
-            infrastructure for Kubeflow and Ray in GCP. Later shifted focus to
-            AI/ML governance and artifact/experiment management solutions.
+            Senior member of the ML Platform org. Primarily focused on managed
+            multi-tenant compute infrastructure for Kubeflow and Ray in
+            GCP. Later shifted focus to AI/ML governance and artifact/experiment
+            management solutions.
         ],
         highlights: (
             [
@@ -178,12 +195,11 @@
 ],
         highlights: (
             [
-                Implemented prototype for horizontally-scalable model-parallel
-                training for multi-task learning using parameter server approach
-                based on Ray and Horovod;
+                Drove development of prototype horizontally-scalable model-parallel
+                training for multi-task learning using Ray and Horovod;
             ],
             [
-                Implement custom Kubernetes scheduler for preemptible workloads
+                Implemented custom Kubernetes scheduler for preemptible workloads
                 and resource reservations in an on-prem GPU cluster.
             ],
         ),
@@ -200,13 +216,13 @@
             on: workflow orchestration; experiment management/iteration; and
             overall ML engineering productivity.
         ],
-        highlights: (
-            [
-                Enabled distributed training of TensorFlow models in Apache
-                Mesos from an Airflow pipeline via Deepbird, Twitter's
-                TensorFlow-based model training/evaluating/serving framework
-            ],
-        ),
+        // highlights: (
+        //     [
+        //         Enabled distributed training of TensorFlow models in Apache
+        //         Mesos from an Airflow pipeline via Deepbird, Twitter's
+        //         TensorFlow-based model training/evaluating/serving framework
+        //     ],
+        // ),
     ),
     (
         organization: "Uber",
