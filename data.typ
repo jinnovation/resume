@@ -95,16 +95,17 @@
         startDate: "2024-04-15",
         location: "New York, NY",
         blurb: [
-            Leading the platformization of Hinge's disparate AI/ML efforts.
+            Leading the platformization of Hinge's various AI/ML efforts
+            (recommendations, trust and safety, user growth and retention, etc.).
         ],
         highlights: (
             [
-                Re-architected
+                Re-architected photo-scoring pipeline for
                 #link("https://hingeapp.zendesk.com/hc/en-us/articles/26558052212627-What-is-Top-Photo")[Top
-                Photo] scoring pipeline to enable sub-hour reactive photo score
-                updates and performant (\~hours) backfills for new model
-                outputs, reducing time-to-production for new photo-scoring
-                models from months to days;
+                Photo] enable multi-plexed photo-score near-real-time creation
+                and updating in response to relevant signals using Databricks
+                Delta Live Tables, Spark, Flink, and Ray Serve; reduced rollout
+                time of new photo-scoring models from months to one week.
             ],
             [
                 Defined the technical direction of Hinge's model serving
@@ -122,6 +123,7 @@
         startDate: "2024-02-01",
         endDate: "2024-08-30",
         location: "New York, NY",
+        hide: true,
         blurb: [
             "Fractional" tech lead and architect. Partner with the CEO to define
             and execute on engineering strategies, including hiring and vendor
