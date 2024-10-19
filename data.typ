@@ -62,7 +62,7 @@
 #let speaking = (
     (
         title: "Accelerating Time-to-Production for ML at Hinge",
-        url: "https://raysummit.anyscale.com/flow/anyscale/raysummit2024/landing/page/eventsite",
+        url: "https://youtu.be/_nsTcYtfnXU",
         conference: "Ray Summit",
         date: "2024-09-30",
     ),
