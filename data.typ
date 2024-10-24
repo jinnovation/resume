@@ -102,10 +102,10 @@
             [
                 Re-architected photo-scoring pipeline for
                 #link("https://hingeapp.zendesk.com/hc/en-us/articles/26558052212627-What-is-Top-Photo")[Top
-                Photo] enable multi-plexed photo-score near-real-time creation
-                and updating in response to relevant signals using Databricks
-                Delta Live Tables, Spark, Flink, and Ray Serve; reduced rollout
-                time of new photo-scoring models from months to one week.
+                Photo] to enable multi-plexed rescoring of user photos in
+                near-real-time using Databricks Delta Live Tables, Spark, Flink,
+                and Ray Serve; reduced rollout time of new photo-scoring models
+                from months to one week.
             ],
             [
                 Defined the technical direction of Hinge's model serving
