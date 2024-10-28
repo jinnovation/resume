@@ -100,19 +100,24 @@
         ],
         highlights: (
             [
+                Defined the org-wide technical direction and strategy for
+                production serving of ML models at Hinge. Conducted in-depth and
+                methodical evaluation of two solutions (Ray Serve and
+                #link("https://www.databricks.com/product/model-serving")[Databricks
+                Model Serving]). Developed multi-quarter development roadmap
+                centered around top priorities (system and model observability;
+                model governance; structured rollout and deployments; etc.);
+                drove subsequent alignment and collaboration between AI Platform
+                team and cross-functional partners, e.g. Data Platform and
+                Engineering Platform teams.
+            ],
+            [
                 Re-architected photo-scoring pipeline for
                 #link("https://hingeapp.zendesk.com/hc/en-us/articles/26558052212627-What-is-Top-Photo")[Top
                 Photo] to enable multi-plexed rescoring of user photos in
                 near-real-time using Databricks Delta Live Tables, Spark, Flink,
                 and Ray Serve; reduced rollout time of new photo-scoring models
                 from months to one week.
-            ],
-            [
-                Defined the technical direction of Hinge's model serving
-                strategy. Conducted in-depth and methodical evaluation of two
-                solutions (Ray Serve and
-                #link("https://www.databricks.com/product/model-serving")[Databricks
-                Model Serving]) and defined multi-quarter development roadmap.
             ],
         )
     ),
