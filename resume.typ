@@ -75,6 +75,10 @@
     block(below: 2.0em)[
         == Speaking
         #for speak in speaking {
+            if speak.at("hide", default: false) {
+                continue
+            }
+
             let date = time.strpdate(speak.date)
             let title = if speak.url != none [#link(speak.url)[#speak.title]] else [#speak.title]
             block(width: 100%, breakable: isbreakable, spacing: 0.5em)[

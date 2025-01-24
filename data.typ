@@ -61,6 +61,12 @@
 
 #let speaking = (
     (
+        title: "Trimming the Long Tail of Production Model Ownership at Hinge",
+        url: "https://www.datacouncil.ai/bay-2025",
+        conference: "Data Council",
+        date: "2025-04-22",
+    ),
+    (
         title: "Accelerating Time-to-Production for ML at Hinge",
         url: "https://youtu.be/_nsTcYtfnXU",
         conference: "Ray Summit",
@@ -71,6 +77,7 @@
         url: "https://twimlai.com/conf/twimlcon/2022/session/how-spotify-is-navigating-an-evolving-ml-landscape-with-hendrix-platform/",
         conference: "TWIMLcon AI Platforms",
         date: "2022-10-04",
+        hide: true,
     ),
 
     (
