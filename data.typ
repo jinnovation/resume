@@ -107,18 +107,25 @@
         ],
         highlights: (
             [
-                Defined the org-wide technical direction and strategy for
-                production serving of ML models at Hinge. Conducted in-depth and
-                methodical evaluation of two solutions (Ray Serve and
-                #link("https://www.databricks.com/product/model-serving")[Databricks
-                Model Serving]). Developed multi-quarter development roadmap
-                centered around top priorities (system and model observability;
-                model governance; structured rollout and deployments; etc.);
-                drove subsequent alignment and collaboration between AI Platform
-                team and cross-functional partners, e.g. Data Platform and
-                Engineering Platform teams.
+                Tech-leading the 0-to-1 development of LLMOps capabilities, with
+                initial focus on enabling structured, auditable, and
+                reproducible evaluations of generative AI use cases across the
+                Hinge product surface.
             ],
             [
+                Defined the org-wide technical direction and strategy for
+                production serving of ML models at Hinge. Effectively steered a
+                build-or-buy evaluation of market solutions. Developed
+                year-long strategy and roadmap centered around top priorities (system and
+                model observability; model governance; structured rollout and
+                deployments; etc.) in collaboration with cross-functional
+                partners (Data Platform and Engineering Platform
+                teams). Delivered generally-available solution in three quarters.
+            ],
+            [
+                // There's a lot of hidden stuff here about using Top Photo to
+                // prototype/experiment with new serving pattern to use as the
+                // foundation for model serving org-wide.
                 Re-architected photo-scoring pipeline for
                 #link("https://hingeapp.zendesk.com/hc/en-us/articles/26558052212627-What-is-Top-Photo")[Top
                 Photo] to enable multi-plexed rescoring of user photos in
@@ -126,6 +133,7 @@
                 and Ray Serve; reduced rollout time of new photo-scoring models
                 from months to one week.
             ],
+            // TODO: Soft work?
         )
     ),
     (
