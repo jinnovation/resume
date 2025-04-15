@@ -62,7 +62,7 @@
 #let speaking = (
     (
         title: "Trimming the Long Tail of Production Model Ownership at Hinge",
-        url: "https://www.datacouncil.ai/bay-2025",
+        url: "https://www.datacouncil.ai/talks-0/trimming-the-long-tail-of-production-model-ownership-at-hinge-",
         conference: "Data Council",
         date: "2025-04-22",
     ),
