@@ -21,7 +21,9 @@
     "Infrastructure and Distributed Systems": (
         "Kubernetes",
         "Terraform",
+        "Helm",
         "Prometheus",
+        "OpenTelemetry",
         "gRPC",
         "Docker",
     ),
@@ -98,41 +100,55 @@
     (
         organization: "Hinge",
         url: "https://hinge.co",
-        position: "Staff Machine Learning Engineer, AI Platform",
+        position: "Staff Machine Learning Engineer",
         startDate: "2024-04-15",
         location: "New York, NY",
         blurb: [
-            Leading the platformization of Hinge's various AI/ML efforts
-            (recommendations, trust and safety, user growth and retention, etc.).
+            Leading the democratization and platformization of AI at Hinge.
         ],
         highlights: (
             [
-                Tech-leading the 0-to-1 development of LLMOps capabilities, with
-                initial focus on enabling structured, auditable, and
-                reproducible evaluations of generative AI use cases across the
-                Hinge product surface.
+                Spearheading a workstream on *online monitoring and evaluation of
+                generative AI systems*. Leading vendor evaluations for
+                solutions to monitoring generative AI systems, prompt
+                management, A/B testing, etc. Coordinating initial
+                platformization of disparate generative AI initiatives across
+                backend, AI, and data engineering organizations to facilitate
+                sturctured evaluation and measurement. Defining the strategy and
+                roadmap for judge-based evaluations, tracing of production
+                foundation model invocations via OpenTelemetry, and hot-path
+                guardrailing of LLM inputs and outputs.
             ],
             [
-                Defined the org-wide technical direction and strategy for
-                production serving of ML models at Hinge. Effectively steered a
-                build-or-buy evaluation of market solutions. Developed
-                year-long strategy and roadmap centered around top priorities (system and
-                model observability; model governance; structured rollout and
-                deployments; etc.) in collaboration with cross-functional
-                partners (Data Platform and Engineering Platform
-                teams). Delivered generally-available solution in three quarters.
+                Owned the *model serving strategy* from end-to-end, delivering a
+                generally-available platform in three quarters that reduced
+                time-to-production for net-new models by \~50%. Developed
+                year-long initial strategy from first principles, aligning the
+                AI Platform Core team on core initial focuses -- system and
+                model observability; model governance; unified artifact
+                management for heterogeneous deployment environments. Drove
+                close collaboration across cross-functional platform partner
+                teams in Data and Engineering.
             ],
             [
-                // There's a lot of hidden stuff here about using Top Photo to
-                // prototype/experiment with new serving pattern to use as the
-                // foundation for model serving org-wide.
-                Re-architected photo-scoring pipeline for
-                #link("https://hingeapp.zendesk.com/hc/en-us/articles/26558052212627-What-is-Top-Photo")[Top
-                Photo] to enable multi-plexed rescoring of user photos in
-                near-real-time using Databricks Delta Live Tables, Spark, Flink,
-                and Ray Serve; reduced rollout time of new photo-scoring models
-                from months to one week.
+                Established the *Hinge AI Staff Engineer Forum*, providing a
+                network of six Staff-level technical leaders across AI at Hinge
+                with a venue for advising AI leadership on departmental
+                technical strategy, as well as for sharing tips regarding
+                "leadership without authority," particularly with regards to
+                delegation, mentorship and coaching.
             ],
+            // [
+            //     // There's a lot of hidden stuff here about using Top Photo to
+            //     // prototype/experiment with new serving pattern to use as the
+            //     // foundation for model serving org-wide.
+            //     Re-architected photo-scoring pipeline for
+            //     #link("https://hingeapp.zendesk.com/hc/en-us/articles/26558052212627-What-is-Top-Photo")[Top
+            //     Photo] to enable multi-plexed rescoring of user photos in
+            //     near-real-time using Databricks Delta Live Tables, Spark, Flink,
+            //     and Ray Serve; reduced rollout time of new photo-scoring models
+            //     from months to one week.
+            // ],
             // TODO: Soft work?
         )
     ),
