@@ -108,27 +108,27 @@
         ],
         highlights: (
             [
-                Spearheading a workstream on *online monitoring and evaluation of
-                generative AI systems*. Leading vendor evaluations for
-                solutions to monitoring generative AI systems, prompt
-                management, A/B testing, etc. Coordinating initial
-                platformization of disparate generative AI initiatives across
-                backend, AI, and data engineering organizations to facilitate
-                sturctured evaluation and measurement. Defining the strategy and
-                roadmap for judge-based evaluations, tracing of production
-                foundation model invocations via OpenTelemetry, and hot-path
-                guardrailing of LLM inputs and outputs.
+                Spearheading *online monitoring and evaluation of generative AI
+                systems*. Leading vendor evaluations for solutions to monitoring
+                generative AI systems, prompt management, A/B testing,
+                etc. Coordinating the platformization of disparate generative AI
+                initiatives across backend, AI, and data engineering
+                organizations to facilitate structured evaluation and
+                measurement. Defining the strategy and roadmap for judge-based
+                evaluations, tracing of production foundation model invocations
+                via OpenTelemetry, and hot-path guardrailing of LLM inputs and
+                outputs.
             ],
             [
                 Owned the *model serving strategy* from end-to-end, delivering a
                 generally-available platform in three quarters that reduced
                 time-to-production for net-new models by \~50%. Developed
-                year-long initial strategy from first principles, aligning the
-                AI Platform Core team on core initial focuses -- system and
-                model observability; model governance; unified artifact
-                management for heterogeneous deployment environments. Drove
-                close collaboration across cross-functional platform partner
-                teams in Data and Engineering.
+                year-long strategy and roadmap from first principles, aligning
+                the AI Platform Core team on core focuses -- system and model
+                observability; model governance; unified artifact management for
+                heterogeneous deployment environments. Drove close collaboration
+                across cross-functional platform partner teams in Data and
+                Engineering.
             ],
             [
                 Established the *Hinge AI Staff Engineer Forum*, providing a
