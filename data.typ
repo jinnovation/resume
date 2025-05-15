@@ -114,10 +114,10 @@
                 etc. Coordinating the platformization of disparate generative AI
                 initiatives across backend, AI, and data engineering
                 organizations to facilitate structured evaluation and
-                measurement. Defining the strategy and roadmap for judge-based
-                evaluations, tracing of production foundation model invocations
-                via OpenTelemetry, and hot-path guardrailing of LLM inputs and
-                outputs.
+                measurement. Defining and steering the strategy, roadmap, and
+                platform architecture for judge-based evaluations, tracing of
+                production foundation model invocations via OpenTelemetry, and
+                hot-path guardrailing of LLM inputs and outputs.
             ],
             [
                 Owned the *model serving strategy* from end-to-end, delivering a
