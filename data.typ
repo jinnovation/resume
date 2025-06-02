@@ -132,14 +132,6 @@
                 environments. Drove close collaboration across cross-functional
                 platform partner teams in Data and Engineering.
             ],
-            [
-                Established the *Hinge AI Staff Engineer Forum*, providing a
-                network of six Staff-level technical leaders across AI at Hinge
-                with a venue for advising AI leadership on departmental
-                technical strategy, as well as for sharing tips regarding
-                "leadership without authority," particularly with regards to
-                delegation, mentorship and coaching.
-            ],
             // [
             //     // There's a lot of hidden stuff here about using Top Photo to
             //     // prototype/experiment with new serving pattern to use as the
