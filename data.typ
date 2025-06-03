@@ -8,6 +8,10 @@
 )
 
 #let skills = (
+    "Generative AI": (
+        "Phoenix",
+        "OpenInference",
+    ),
     "Machine Learning and Data": (
         link("https://ray.io")[Ray],
         link("https://pytorch.org")[PyTorch],
@@ -31,6 +35,7 @@
         "Amazon Web Services (AWS)",
         "Google Cloud (GCP)",
         link("https://databricks.com")[Databricks],
+        link("https://arize.com")[Arize],
     ),
     "Programming Languages": (
         "Python",
@@ -108,11 +113,13 @@
         ],
         highlights: (
             [
-                Spearheading *online monitoring and evaluation of generative AI
-                systems*. Leading vendor evaluations for solutions to monitoring
-                generative AI systems, prompt management, A/B testing,
-                etc. Implemented a platform for generative AI systems, prompt
-                management, and judge-based evaluations based on OpenTelemetry,
+                Spearheading the 0-to-1 development of *generative AI platform
+                and infrastructure* at Hinge, with a starting focus on *evals
+                and online monitoring*. Leading vendor evaluations for
+                solutions to monitoring generative AI systems, prompt
+                management, A/B testing, etc. Implemented a platform for
+                generative AI systems, prompt management, and judge-based
+                evaluations based on OpenTelemetry,
                 #link("https://github.com/Arize-ai/openinference")[OpenInference],
                 and #link("https://docs.arize.com/phoenix")[Phoenix] in
                 collaboration with stakeholders across Backend, AI, and Data
@@ -162,14 +169,14 @@
         ],
         highlights: (
             [
-                Led the hiring and management of a team of engineering
+                Coordinated the hiring and management of a team of engineering
                 contractors and an external development agency; defined,
                 communicated, and coordinated development roadmap, led platform
                 evaluations, and defined technical ways-of-working for a
                 brand-new team;
             ],
             [
-                Spearheaded 0-to-1 development of platform for collaborative,
+                Led 0-to-1 development of platform for collaborative,
                 crowd-sourced auditing of large language models (open-source and
                 vendor) using Vercel, Next.js, and the Hugging Face API; enabled
                 over 100
@@ -199,7 +206,7 @@
                 multi-tenant Ray infrastructure based on KubeRay;
             ],
             [
-                Spearheaded development of Backstage-based model governance
+                Led development of Backstage-based model governance
                 solution in preparation for the EU Digital Services Act;
             ],
             [
