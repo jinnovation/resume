@@ -8,17 +8,15 @@
 )
 
 #let skills = (
-    "Generative AI": (
+    "AI, ML, and Data": (
         "Phoenix",
         "OpenInference",
-    ),
-    "Machine Learning and Data": (
         link("https://ray.io")[Ray],
         link("https://pytorch.org")[PyTorch],
-        link("https://spark.apache.org")[Apache Spark],
-        link("https://flink.apache.org/")[Apache Flink],
+        link("https://spark.apache.org")[Spark],
+        link("https://flink.apache.org/")[Flink],
         link("https://mlflow.org")[MLflow],
-        link("https://airflow.apache.org")[Apache Airflow],
+        link("https://airflow.apache.org")[Airflow],
         link("https://www.kubeflow.org")[Kubeflow],
         link("https://www.tensorflow.org")[TensorFlow],
     ),
@@ -123,34 +121,16 @@
                 #link("https://github.com/Arize-ai/openinference")[OpenInference],
                 and #link("https://docs.arize.com/phoenix")[Phoenix] in
                 collaboration with stakeholders across Backend, AI, and Data
-                disciplines. Defining and steering the strategy, roadmap, and
-                platform architecture for judge-based evaluations, tracing of
-                production foundation model invocations via OpenTelemetry, and
-                hot-path guardrailing of LLM inputs and outputs.
+                disciplines.
             ],
             [
-                Owned the *model serving strategy* from end-to-end. Delivered a
-                generally-available platform based on MLflow, Ray, and Spark in
-                three quarters that reduced time-to-production for net-new
-                models by \~50%. Developed year-long strategy and roadmap from
-                first principles, aligning the AI Platform Core team on core
-                focuses -- system and model observability; model governance;
-                unified artifact management for heterogeneous deployment
-                environments. Drove close collaboration across cross-functional
+                Developed and drove year-long company-wide *model serving
+                strategy and roadmap*. Delivered generally-available platform based on
+                MLflow, Ray, and Spark, reducing time-to-production for net-new
+                models by \~50%. Aligned AI department on core
+                focuses; drove close collaboration across cross-functional
                 platform partner teams in Data and Engineering.
             ],
-            // [
-            //     // There's a lot of hidden stuff here about using Top Photo to
-            //     // prototype/experiment with new serving pattern to use as the
-            //     // foundation for model serving org-wide.
-            //     Re-architected photo-scoring pipeline for
-            //     #link("https://hingeapp.zendesk.com/hc/en-us/articles/26558052212627-What-is-Top-Photo")[Top
-            //     Photo] to enable multi-plexed rescoring of user photos in
-            //     near-real-time using Databricks Delta Live Tables, Spark, Flink,
-            //     and Ray Serve; reduced rollout time of new photo-scoring models
-            //     from months to one week.
-            // ],
-            // TODO: Soft work?
         )
     ),
     (
@@ -160,29 +140,25 @@
         startDate: "2024-02-01",
         endDate: "2024-08-30",
         location: "New York, NY",
-        hide: true,
         blurb: [
             "Fractional" tech lead and architect. Partner with the CEO to define
-            and execute on engineering strategies, including hiring and vendor
-            selection. Contribute in hands-on capacity for technical
-            proofs-of-concepts.
+            and execute on engineering strategies. Contribute in hands-on
+            capacity for technical proofs-of-concepts.
         ],
         highlights: (
             [
-                Coordinated the hiring and management of a team of engineering
-                contractors and an external development agency; defined,
-                communicated, and coordinated development roadmap, led platform
-                evaluations, and defined technical ways-of-working for a
-                brand-new team;
+                Hired and managed a team of engineering contractors and an
+                external development agency; defined, communicated, and
+                coordinated development roadmap, led platform evaluations, and
+                defined technical ways-of-working for a brand-new team;
             ],
             [
-                Led 0-to-1 development of platform for collaborative,
-                crowd-sourced auditing of large language models (open-source and
-                vendor) using Vercel, Next.js, and the Hugging Face API; enabled
-                over 100
+                Led 0-to-1 development of platform for crowd-sourced auditing of
+                foundation models using Vercel, Vercel AI SDK, Next.js, and the
+                Hugging Face API; enabled over 100
                 "#link("https://www.humane-intelligence.org/bounty1")[bias
-                bounty]" participants to contribute over 30 submissions via
-                Hugging Face API.
+                bounty]" participants to contribute evaluations of open-source
+                LLMs.
             ],
         ),
     ),
@@ -210,9 +186,9 @@
                 solution in preparation for the EU Digital Services Act;
             ],
             [
-                Defined and drove general-availability roadmap for
-                Kubeflow-based orchestration product; defined SLOs and educated
-                ML Platform org on SRE best practices.
+                Defined general-availability roadmap for
+                Kubeflow-based orchestration product, centered on SLOs and SRE
+                best practices.
             ],
         ),
     ),
