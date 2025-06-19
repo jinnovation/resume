@@ -147,18 +147,18 @@
         ],
         highlights: (
             [
-                Hired and managed a team of engineering contractors and an
-                external development agency; defined, communicated, and
-                coordinated development roadmap, led platform evaluations, and
-                defined technical ways-of-working for a brand-new team;
-            ],
-            [
                 Led 0-to-1 development of platform for crowd-sourced auditing of
                 foundation models using Vercel, Vercel AI SDK, Next.js, and the
                 Hugging Face API; enabled over 100
                 "#link("https://www.humane-intelligence.org/bounty1")[bias
                 bounty]" participants to contribute evaluations of open-source
                 LLMs.
+            ],
+            [
+                Hired and managed a team of engineering contractors and an
+                external development agency; defined, communicated, and
+                coordinated development roadmap, led platform evaluations, and
+                defined technical ways-of-working for a brand-new team;
             ],
         ),
     ),
