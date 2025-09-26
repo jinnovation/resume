@@ -9,8 +9,9 @@
 
 #let skills = (
     "AI, ML, and Data": (
-        "Phoenix",
-        "OpenInference",
+        link("https://www.tensorzero.com/docs")[TensorZero],
+        link("https://phoenix.arize.com")[Phoneix],
+        link("https://github.com/Arize-ai/openinference")[OpenInference],
         link("https://ray.io")[Ray],
         link("https://pytorch.org")[PyTorch],
         link("https://spark.apache.org")[Spark],
@@ -107,29 +108,38 @@
         startDate: "2024-04-15",
         location: "New York, NY",
         blurb: [
-            Leading the democratization and platformization of AI at Hinge.
+            Leading the democratization and platformization of AI at
+            Hinge. Spearheading 0-to-1 development of generative AI
+            infrastructure. Previously defined, led, and delivered on
+            traditional-ML model serving strategy from end-to-end.
         ],
         highlights: (
             [
-                Spearheading the 0-to-1 development of *generative AI platform
-                and infrastructure* at Hinge, with a starting focus on *evals
-                and online monitoring*. Leading vendor evaluations for
-                solutions to monitoring generative AI systems, prompt
-                management, A/B testing, etc. Implemented a platform for
-                generative AI systems, prompt management, and judge-based
-                evaluations based on OpenTelemetry,
+                Identified need for centralized LLM gateway solution to federate
+                foundation model queries across model porviders and query
+                patterns. Leading partnership with #link("https://www.tensorzero.com/docs")[TensorZero] team on open-source
+                gateway and optimization solution.
+            ],
+            [
+                Drove the implementation and delivery of Hinge's LLM evaluation
+                and monitoring system. Successfully led and closed out
+                build-or-buy evaluation of vendor/OSS solutions for evaluation
+                and prompt engineering/management. Implemented platform based on
+                OpenTelemetry,
                 #link("https://github.com/Arize-ai/openinference")[OpenInference],
                 and #link("https://docs.arize.com/phoenix")[Phoenix] in
                 collaboration with stakeholders across Backend, AI, and Data
                 disciplines.
             ],
             [
-                Developed and drove year-long company-wide *model serving
-                strategy and roadmap*. Delivered generally-available platform based on
-                MLflow, Ray, and Spark, reducing time-to-production for net-new
-                models by \~50%. Aligned AI department on core
-                focuses; drove close collaboration across cross-functional
-                platform partner teams in Data and Engineering.
+                Defined and led the implementation and delivery of Hinge AI's
+                model serving strategy. Collaborated with applied AI/ML teams
+                to coalesce existing approaches/solutions into cohesive platform
+                based on MLflow, Ray, and Spark, reducing time-to-production for
+                new models by \~50%. Defined strategic principles, focuses, and
+                year-long roadmap in close collaboration with platform partner
+                teams in Data and Engineering to achieve general availability in
+                three quarters.
             ],
         )
     ),
@@ -140,6 +150,7 @@
         startDate: "2024-02-01",
         endDate: "2024-08-30",
         location: "New York, NY",
+        simple: true,
         blurb: [
             "Fractional" tech lead and architect. Partner with the CEO to define
             and execute on engineering strategies. Contribute in hands-on

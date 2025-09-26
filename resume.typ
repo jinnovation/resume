@@ -112,7 +112,7 @@
                     #set text(style: "italic")
                     #w.blurb
                 ]
-                #if w.keys().contains("highlights") [
+                #if w.keys().contains("highlights") and not w.at("simple", default: false) [
                     #for hi in w.highlights [
                         - #hi
                     ]
