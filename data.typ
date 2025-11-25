@@ -10,7 +10,7 @@
 #let skills = (
     "AI, ML, and Data": (
         link("https://www.tensorzero.com/docs")[TensorZero],
-        link("https://phoenix.arize.com")[Phoneix],
+        link("https://phoenix.arize.com")[Phoenix],
         link("https://github.com/Arize-ai/openinference")[OpenInference],
         link("https://ray.io")[Ray],
         link("https://pytorch.org")[PyTorch],
