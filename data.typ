@@ -109,27 +109,29 @@
         location: "New York, NY",
         blurb: [
             Leading the democratization and platformization of AI at
-            Hinge. Spearheading 0-to-1 development of generative AI
+            Hinge. Spearheading 0-to-1 development of agentic AI
             infrastructure. Previously defined, led, and delivered on
             traditional-ML model serving strategy from end-to-end.
         ],
         highlights: (
             [
-                Identified need for centralized LLM gateway solution to federate
-                foundation model queries across model porviders and query
-                patterns. Leading partnership with #link("https://www.tensorzero.com/docs")[TensorZero] team on open-source
-                gateway and optimization solution.
+                Tech lead for "User Traits," an agentic system leveraging LLMs and VLMs to power
+                enhanced user understanding. Defined the shared semantic layer as well as the
+                foundational architecture (TensorZero, OpenTelemetry, Spark, Unity
+                Catalog). Collaborated with development partners across Backend, Data, and AI
+                disciplines to identify use cases and coordinate contributions.
             ],
             [
-                Drove the implementation and delivery of Hinge's LLM evaluation
-                and monitoring system. Successfully led and closed out
-                build-or-buy evaluation of vendor/OSS solutions for evaluation
-                and prompt engineering/management. Implemented platform based on
-                OpenTelemetry,
-                #link("https://github.com/Arize-ai/openinference")[OpenInference],
-                and #link("https://docs.arize.com/phoenix")[Phoenix] in
-                collaboration with stakeholders across Backend, AI, and Data
-                disciplines.
+                Laid the foundations of Hinge's centralized agentic AI infrastructure. Successfully
+                led and closed out build-or-buy evaluation of vendor/OSS solutions for evaluation
+                and prompt engineering/management. Implemented platform based on OpenTelemetry,
+                #link("https://github.com/Arize-ai/openinference")[OpenInference], and
+                #link("https://docs.arize.com/phoenix")[Phoenix] in collaboration with stakeholders
+                across Backend, AI, and Data disciplines. Identified need for centralized LLM
+                gateway solution to federate foundation model queries across model porviders and
+                query patterns. Led partnership with
+                #link("https://www.tensorzero.com/docs")[TensorZero] team on open-source gateway and
+                optimization solution.
             ],
             [
                 Defined and led the implementation and delivery of Hinge AI's
