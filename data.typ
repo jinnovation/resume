@@ -108,18 +108,17 @@
         startDate: "2024-04-15",
         location: "New York, NY",
         blurb: [
-            Leading the democratization and platformization of AI at
-            Hinge. Spearheading 0-to-1 development of agentic AI
-            infrastructure. Previously defined, led, and delivered on
-            traditional-ML model serving strategy from end-to-end.
+            Founding member of the AI Platform Core team, charged with the democratization and
+            platformization of AI at Hinge. Current focus areas: agentic systems; model serving; and
+            data/feature engineering for AI/ML.
         ],
         highlights: (
             [
                 Tech lead for "User Traits," an agentic system leveraging LLMs and VLMs to power
-                enhanced user understanding. Defined the shared semantic layer as well as the
-                foundational architecture (TensorZero, OpenTelemetry, Spark, Unity
-                Catalog). Collaborated with development partners across Backend, Data, and AI
-                disciplines to identify use cases and coordinate contributions.
+                inferred user understanding. Defined foundational architecture (TensorZero,
+                OpenTelemetry, Spark, Unity Catalog) and shared semantic layer. Collaborated with
+                development partners across Backend, Data, and AI disciplines to identify use cases
+                and coordinate contributions.
             ],
             [
                 Laid the foundations of Hinge's centralized agentic AI infrastructure. Successfully
@@ -134,14 +133,13 @@
                 optimization solution.
             ],
             [
-                Defined and led the implementation and delivery of Hinge AI's
-                model serving strategy. Collaborated with applied AI/ML teams
-                to coalesce existing approaches/solutions into cohesive platform
-                based on MLflow, Ray, and Spark, reducing time-to-production for
-                new models by \~50%. Defined strategic principles, focuses, and
-                year-long roadmap in close collaboration with platform partner
-                teams in Data and Engineering to achieve general availability in
-                three quarters.
+                Delivered Hinge's first generally-available model serving platform, HAI
+                Serve. Defined the year-long strategy and subsequent roadmap +
+                delivery. Collaborated with applied AI/ML teams to coalesce existing
+                approaches/solutions into cohesive platform based on MLflow, Ray, and Spark,
+                reducing time-to-production for new models by \~50%. Defined strategic principles,
+                focuses, and year-long roadmap in close collaboration with platform partner teams in
+                Data and Engineering to achieve general availability in three quarters.
             ],
         )
     ),
