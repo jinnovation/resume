@@ -137,9 +137,7 @@
                 Serve. Defined the year-long strategy and subsequent roadmap +
                 delivery. Collaborated with applied AI/ML teams to coalesce existing
                 approaches/solutions into cohesive platform based on MLflow, Ray, and Spark,
-                reducing time-to-production for new models by \~50%. Defined strategic principles,
-                focuses, and year-long roadmap in close collaboration with platform partner teams in
-                Data and Engineering to achieve general availability in three quarters.
+                reducing time-to-production for new models by \~50%.
             ],
         )
     ),
@@ -191,10 +189,6 @@
             [
                 Drove early-stage evaluation and implementation of centralized,
                 multi-tenant Ray infrastructure based on KubeRay;
-            ],
-            [
-                Led development of Backstage-based model governance
-                solution in preparation for the EU Digital Services Act;
             ],
             [
                 Defined general-availability roadmap for
