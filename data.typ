@@ -9,12 +9,12 @@
 
 #let skills = (
     "AI, ML, and Data": (
+        link("https://ray.io")[Ray],
+        link("https://spark.apache.org")[Spark],
         link("https://www.tensorzero.com/docs")[TensorZero],
         link("https://phoenix.arize.com")[Phoenix],
         link("https://github.com/Arize-ai/openinference")[OpenInference],
-        link("https://ray.io")[Ray],
         link("https://pytorch.org")[PyTorch],
-        link("https://spark.apache.org")[Spark],
         link("https://flink.apache.org/")[Flink],
         link("https://mlflow.org")[MLflow],
         link("https://airflow.apache.org")[Airflow],
@@ -37,10 +37,9 @@
         link("https://arize.com")[Arize],
     ),
     "Programming Languages": (
-        "Python",
-        "Go",
-        "C++",
-        "Java",
+        "Python (fluent)",
+        "Go (fluent)",
+        "Rust (fledgling)",
     )
 )
 
@@ -133,11 +132,9 @@
                 optimization solution.
             ],
             [
-                Delivered Hinge's first generally-available model serving platform, HAI
-                Serve. Defined the year-long strategy and subsequent roadmap +
-                delivery. Collaborated with applied AI/ML teams to coalesce existing
-                approaches/solutions into cohesive platform based on MLflow, Ray, and Spark,
-                reducing time-to-production for new models by \~50%.
+                Delivered Hinge's first generally-available model serving platform, HAI Serve, based
+                on KubeRay, MLflow, and Spark. Defined the year-long strategy in collaboration with
+                applied AI/ML teams. Reduced time-to-production for new models by \~50%.
             ],
         )
     ),
