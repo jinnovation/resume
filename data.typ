@@ -108,8 +108,9 @@
         location: "New York, NY",
         blurb: [
             Founding member of the AI Platform Core team, charged with the democratization and
-            platformization of AI at Hinge. Current focus areas: agentic systems; model serving; and
-            data/feature engineering for AI/ML.
+            platformization of AI at Hinge. Have led initiatives across all three of:
+            batch/real-time/online serving; feature store infrastructure and feature engineering; and
+            agentic systems.
         ],
         highlights: (
             [
