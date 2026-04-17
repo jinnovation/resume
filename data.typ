@@ -107,10 +107,9 @@
         startDate: "2024-04-15",
         location: "New York, NY",
         blurb: [
-            Founding member of the AI Platform Core team, charged with the democratization and
-            platformization of AI at Hinge. Have led initiatives across all three of:
-            batch/real-time/online serving; feature store infrastructure and feature engineering; and
-            agentic systems.
+            Founding member of the AI Platform Core team. Technical leader across all three of:
+            batch/real-time/online serving; feature store infrastructure and feature engineering;
+            and agentic system evaluation and governance.
         ],
         highlights: (
             [
