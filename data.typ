@@ -108,8 +108,8 @@
         location: "New York, NY",
         blurb: [
             Founding member of the AI Platform Core team. Technical leader across all three of:
-            batch/real-time/online serving; feature store infrastructure and feature engineering;
-            and agentic system evaluation and governance.
+            model serving (online; real-time/near-real-time streaming; batch); feature store
+            infrastructure and engineering; and agentic system evaluation and governance.
         ],
         highlights: (
             [
