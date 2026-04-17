@@ -1,0 +1,9 @@
+repos:
+  - repo: local
+    hooks:
+      - id: compile-resume
+        name: Compile resume.typ
+        language: system
+        entry: bash -c 'typst compile resume.typ resume.pdf && git add resume.pdf'
+        files: '\.typ$'
+        pass_filenames: false
